@@ -1,0 +1,40 @@
+{
+  "goldSha256": "5bd3a2c09c9a6eb0145faf9ae7252792554e80f029409e59003cd8395bbc739e",
+  "sources": [
+    {
+      "id": "github",
+      "documentHash": "88f85845caf52f3f0c5b2ca7862589cd78f35256e0115a281d7547854660b271",
+      "documentId": "ec663a5163bd99628f5d06adc27f963fde767eff706fccce66d7dff996a24393",
+      "snapshotSha256": "a3f5a978a0973dd9edca2aa3dfd3048f30e72520e278163072c753b7ac1bb8f0",
+      "extractionFileSha256": "8ee855181c933dd51565cdd3c347321b55682050839612a9afc20d0e8a39b92a"
+    },
+    {
+      "id": "discord",
+      "documentHash": "d8a787422698ac39949615715a78f06985db7346f4bd77e0c3abe4d344faeec5",
+      "documentId": "5e33d591a1e36425d94b08effc8db049f5be71c78927a4b00024f7f97c097189",
+      "snapshotSha256": "c4389c3332eee3e7eb8c05a2e93fb9c69d4f696110471a99f35c5a2296afd147",
+      "extractionFileSha256": "e399ff87a97ed14143ec32192e32ed4bf7d2822687c3f9924c4da4797f357965"
+    },
+    {
+      "id": "reddit",
+      "documentHash": "a6d182b4aa6bac3bf3c629db787391a217f933d70a2c5664c9c6ed541295b6a9",
+      "documentId": "c04dac908c7b3bf7ad804a9b432504b9170766f41893fb6d2e16205d217afd9d",
+      "snapshotSha256": "67ede32a3ee2d3ebd158f4559c5ece5a1e435023b9ffc129f6c8b11dcb108930",
+      "extractionFileSha256": "1ff0734cc1ad03585c28016f72ed1b1e749556a9b807510f4c0501a183701830"
+    },
+    {
+      "id": "spotify",
+      "documentHash": "401d734db094bd386eeae685f497ccff9dfd663d78ce5c67a1f7335f2cc1f100",
+      "documentId": "278c3ff4f7fdf0abaaf917cd7738da10fa884bf6973fdac47d262a354c9a5fd8",
+      "snapshotSha256": "8a7575c35c0cbed24a0effcc45178d2d018cf21465825d509ba9c93c3b5237e3",
+      "extractionFileSha256": "a59c46adc3c87c528e48320c1611883891cd3d8ff3b61cdc5c33cb87b5ddfe45"
+    },
+    {
+      "id": "dropbox",
+      "documentHash": "26d95f6839e56300785f89845f1496335e4819c8b0e1392fd15bc9c857d01c23",
+      "documentId": "16614e62bcb6cdfbcde07fa0311a351ab3157377d6de8e0dfc45f56ae6bfdd8c",
+      "snapshotSha256": "3ccca5c2380349da2506abef56a56d9126cf064b90b70b8efdf2570a10a40cca",
+      "extractionFileSha256": "cda8f44b835dcd67ddd586165a8a5c4ff1045985fdb034906bb78da318192281"
+    }
+  ]
+}

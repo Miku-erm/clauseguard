@@ -1,0 +1,16 @@
+{
+  "version": "v1",
+  "fixtureSha256": "063845d37f55bdcfa1382a4930bf9387a5a14b2ed8d833c3d63def6978eebc47",
+  "decision": "A: BOTH SUPPORTED",
+  "sourceText": "Your subscription renews automatically each month at the current price. Renewal reminders are not sent. To avoid charges you must cancel at least thirty days before renewal.",
+  "automaticRenewal": "Affirmative renewal without reminders.",
+  "cancellationRestriction": "Thirty-day advance cancellation lead time independently burdens cancellation of a monthly plan.",
+  "protections": "No cancellation-at-any-time, advance-reminder or refund exception is stated in this complete fictional fixture.",
+  "historicalExpectation": 14,
+  "historicalActual": 27,
+  "mediumBothScore": 27,
+  "formula": "round(20 * 0.7 + 18 * 0.7) = 27",
+  "browserExpectation": "Exactly the two independently supported categories and unchanged deterministic scoring of actual severity. Do not assert a stochastic model severity as UI determinism.",
+  "reviewer": "Codex independent source-reading draft, not human/legal expert",
+  "sourceOfAdjudication": "Original fixture and original unchanged category definitions, before candidate browser output."
+}

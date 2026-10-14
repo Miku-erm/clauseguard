@@ -1,0 +1,12 @@
+[
+  {
+    "predictionId": "spotify-p5",
+    "verdict": "CONTRADICTORY",
+    "rationale": "Renewal alone is insufficient; adjacent cancellation clause explicitly allows cancellation at any time. This is outside the predeclared reference chunks and is not included in TP/FP/FN."
+  },
+  {
+    "predictionId": "spotify-p6",
+    "verdict": "CONTRADICTORY",
+    "rationale": "Service termination on 14-day notice is not a clause allowing unilateral terms changes. Outside the predeclared reference chunks; unscored semantic concern."
+  }
+]

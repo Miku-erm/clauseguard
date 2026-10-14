@@ -1,0 +1,1428 @@
+{
+  "at": "2026-10-14T11:14:54.200Z",
+  "results": [
+    {
+      "test": "initialization",
+      "pass": true,
+      "server": {
+        "name": "clauseguard",
+        "version": "1.0.0"
+      }
+    },
+    {
+      "test": "tool-discovery",
+      "pass": true,
+      "tools": [
+        {
+          "name": "get_risk_categories",
+          "description": "Return the existing ClauseGuard categories and unchanged scoring weights.",
+          "inputSchema": {
+            "type": "object",
+            "properties": {},
+            "$schema": "https://json-schema.org/draft/2020-12/schema",
+            "additionalProperties": false
+          },
+          "outputSchema": {
+            "type": "object",
+            "properties": {
+              "categories": {
+                "minItems": 8,
+                "maxItems": 8,
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "enum": [
+                        "THIRD_PARTY_DATA_SHARING",
+                        "TRACKING_AND_PROFILING",
+                        "UNCLEAR_DATA_RETENTION",
+                        "RESTRICTED_USER_RIGHTS",
+                        "AUTOMATIC_RENEWAL",
+                        "DIFFICULT_CANCELLATION_OR_REFUND",
+                        "UNILATERAL_TERMS_CHANGES",
+                        "LIMITATION_OF_LIABILITY"
+                      ]
+                    },
+                    "titleTr": {
+                      "type": "string"
+                    },
+                    "descriptionTr": {
+                      "type": "string"
+                    },
+                    "weight": {
+                      "type": "number",
+                      "exclusiveMinimum": 0
+                    },
+                    "guidance": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "titleTr",
+                    "descriptionTr",
+                    "weight",
+                    "guidance"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            },
+            "required": [
+              "categories"
+            ],
+            "$schema": "https://json-schema.org/draft/2020-12/schema",
+            "additionalProperties": false
+          }
+        },
+        {
+          "name": "verify_evidence",
+          "description": "Verify a quotation against explicitly supplied text, using original hashes and the existing strict Evidence Validator. No browsing or file access.",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "sourceId": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9_-]{1,80}$"
+              },
+              "title": {
+                "default": "Subscription Terms",
+                "type": "string",
+                "enum": [
+                  "Subscription Terms",
+                  "Privacy Policy",
+                  "Terms of Service"
+                ]
+              },
+              "documentText": {
+                "type": "string",
+                "minLength": 40,
+                "maxLength": 1600
+              },
+              "quote": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1600
+              },
+              "category": {
+                "type": "string",
+                "enum": [
+                  "THIRD_PARTY_DATA_SHARING",
+                  "TRACKING_AND_PROFILING",
+                  "UNCLEAR_DATA_RETENTION",
+                  "RESTRICTED_USER_RIGHTS",
+                  "AUTOMATIC_RENEWAL",
+                  "DIFFICULT_CANCELLATION_OR_REFUND",
+                  "UNILATERAL_TERMS_CHANGES",
+                  "LIMITATION_OF_LIABILITY"
+                ]
+              },
+              "expectedDocumentHash": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              },
+              "sourceChunkId": {
+                "type": "string",
+                "maxLength": 100
+              }
+            },
+            "required": [
+              "sourceId",
+              "documentText",
+              "quote",
+              "category"
+            ],
+            "$schema": "https://json-schema.org/draft/2020-12/schema",
+            "additionalProperties": false
+          },
+          "outputSchema": {
+            "type": "object",
+            "properties": {
+              "documentId": {
+                "type": "string"
+              },
+              "documentHash": {
+                "type": "string"
+              },
+              "sourceChunkId": {
+                "type": "string"
+              },
+              "verified": {
+                "type": "boolean"
+              },
+              "accepted": {
+                "type": "object",
+                "properties": {
+                  "category": {
+                    "type": "string",
+                    "enum": [
+                      "THIRD_PARTY_DATA_SHARING",
+                      "TRACKING_AND_PROFILING",
+                      "UNCLEAR_DATA_RETENTION",
+                      "RESTRICTED_USER_RIGHTS",
+                      "AUTOMATIC_RENEWAL",
+                      "DIFFICULT_CANCELLATION_OR_REFUND",
+                      "UNILATERAL_TERMS_CHANGES",
+                      "LIMITATION_OF_LIABILITY"
+                    ]
+                  },
+                  "severity": {
+                    "type": "string",
+                    "enum": [
+                      "LOW",
+                      "MEDIUM",
+                      "HIGH"
+                    ]
+                  },
+                  "sourceChunkId": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 100
+                  },
+                  "quote": {
+                    "type": "string",
+                    "minLength": 8,
+                    "maxLength": 1400
+                  },
+                  "explanationTr": {
+                    "type": "string",
+                    "minLength": 12,
+                    "maxLength": 600
+                  },
+                  "reasonTr": {
+                    "type": "string",
+                    "minLength": 12,
+                    "maxLength": 600
+                  },
+                  "findingId": {
+                    "type": "string"
+                  },
+                  "evidence": {
+                    "type": "object",
+                    "properties": {
+                      "sourceChunkId": {
+                        "type": "string"
+                      },
+                      "textHash": {
+                        "type": "string"
+                      },
+                      "documentHash": {
+                        "type": "string"
+                      },
+                      "start": {
+                        "type": "integer",
+                        "minimum": 0,
+                        "maximum": 9007199254740991
+                      },
+                      "end": {
+                        "type": "integer",
+                        "exclusiveMinimum": 0,
+                        "maximum": 9007199254740991
+                      },
+                      "occurrences": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 9007199254740991
+                        }
+                      },
+                      "sourceLocator": {
+                        "type": "object",
+                        "properties": {
+                          "selector": {
+                            "type": "string"
+                          },
+                          "headingPath": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          },
+                          "textStart": {
+                            "type": "integer",
+                            "minimum": 0,
+                            "maximum": 9007199254740991
+                          },
+                          "textEnd": {
+                            "type": "integer",
+                            "minimum": 0,
+                            "maximum": 9007199254740991
+                          },
+                          "segments": {
+                            "minItems": 1,
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "path": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "integer",
+                                    "minimum": 0,
+                                    "maximum": 9007199254740991
+                                  }
+                                },
+                                "start": {
+                                  "type": "integer",
+                                  "minimum": 0,
+                                  "maximum": 9007199254740991
+                                },
+                                "end": {
+                                  "type": "integer",
+                                  "minimum": 0,
+                                  "maximum": 9007199254740991
+                                }
+                              },
+                              "required": [
+                                "path",
+                                "start",
+                                "end"
+                              ],
+                              "additionalProperties": false
+                            }
+                          }
+                        },
+                        "required": [
+                          "selector",
+                          "headingPath",
+                          "textStart",
+                          "textEnd",
+                          "segments"
+                        ],
+                        "additionalProperties": false
+                      }
+                    },
+                    "required": [
+                      "sourceChunkId",
+                      "textHash",
+                      "documentHash",
+                      "start",
+                      "end",
+                      "occurrences",
+                      "sourceLocator"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "required": [
+                  "category",
+                  "severity",
+                  "sourceChunkId",
+                  "quote",
+                  "explanationTr",
+                  "reasonTr",
+                  "findingId",
+                  "evidence"
+                ],
+                "additionalProperties": false
+              },
+              "rejected": {
+                "type": "object",
+                "properties": {
+                  "proposal": {
+                    "type": "object",
+                    "properties": {
+                      "category": {
+                        "type": "string",
+                        "enum": [
+                          "THIRD_PARTY_DATA_SHARING",
+                          "TRACKING_AND_PROFILING",
+                          "UNCLEAR_DATA_RETENTION",
+                          "RESTRICTED_USER_RIGHTS",
+                          "AUTOMATIC_RENEWAL",
+                          "DIFFICULT_CANCELLATION_OR_REFUND",
+                          "UNILATERAL_TERMS_CHANGES",
+                          "LIMITATION_OF_LIABILITY"
+                        ]
+                      },
+                      "severity": {
+                        "type": "string",
+                        "enum": [
+                          "LOW",
+                          "MEDIUM",
+                          "HIGH"
+                        ]
+                      },
+                      "sourceChunkId": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 100
+                      },
+                      "quote": {
+                        "type": "string",
+                        "minLength": 8,
+                        "maxLength": 1400
+                      },
+                      "explanationTr": {
+                        "type": "string",
+                        "minLength": 12,
+                        "maxLength": 600
+                      },
+                      "reasonTr": {
+                        "type": "string",
+                        "minLength": 12,
+                        "maxLength": 600
+                      }
+                    },
+                    "required": [
+                      "category",
+                      "severity",
+                      "sourceChunkId",
+                      "quote",
+                      "explanationTr",
+                      "reasonTr"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "reason": {
+                    "type": "string",
+                    "enum": [
+                      "UNKNOWN_CHUNK",
+                      "OUTSIDE_BATCH",
+                      "QUOTE_MISMATCH",
+                      "VERSION_MISMATCH",
+                      "INTEGRITY_FAILURE",
+                      "CATEGORY_CONTEXT_MISMATCH"
+                    ]
+                  }
+                },
+                "required": [
+                  "proposal",
+                  "reason"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "documentId",
+              "documentHash",
+              "sourceChunkId",
+              "verified"
+            ],
+            "$schema": "https://json-schema.org/draft/2020-12/schema",
+            "additionalProperties": false
+          }
+        },
+        {
+          "name": "analyze_document",
+          "description": "Analyze short explicitly supplied text with existing local Qwen/GPU pipeline. Supplied excerpt coverage remains UNKNOWN and a complete-contract score is withheld.",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "sourceId": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9_-]{1,80}$"
+              },
+              "title": {
+                "default": "Subscription Terms",
+                "type": "string",
+                "enum": [
+                  "Subscription Terms",
+                  "Privacy Policy",
+                  "Terms of Service"
+                ]
+              },
+              "documentText": {
+                "type": "string",
+                "minLength": 40,
+                "maxLength": 1600
+              }
+            },
+            "required": [
+              "sourceId",
+              "documentText"
+            ],
+            "$schema": "https://json-schema.org/draft/2020-12/schema",
+            "additionalProperties": false
+          },
+          "outputSchema": {
+            "type": "object",
+            "properties": {
+              "report": {
+                "type": "object",
+                "properties": {
+                  "documentId": {
+                    "type": "string"
+                  },
+                  "documentHash": {
+                    "type": "string"
+                  },
+                  "analyzedAt": {
+                    "type": "string",
+                    "format": "date-time",
+                    "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+                  },
+                  "status": {
+                    "type": "string",
+                    "enum": [
+                      "COMPLETE",
+                      "PARTIAL",
+                      "INSUFFICIENT",
+                      "FAILED"
+                    ]
+                  },
+                  "score": {
+                    "anyOf": [
+                      {
+                        "type": "integer",
+                        "minimum": 0,
+                        "maximum": 100
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "alarmLevel": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "enum": [
+                          "LOW",
+                          "CAUTION",
+                          "HIGH",
+                          "CRITICAL"
+                        ]
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "scoreWithheldReason": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "categoryScores": {
+                    "type": "object",
+                    "propertyNames": {
+                      "type": "string"
+                    },
+                    "additionalProperties": {
+                      "type": "number",
+                      "minimum": 0
+                    }
+                  },
+                  "findings": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "category": {
+                          "type": "string",
+                          "enum": [
+                            "THIRD_PARTY_DATA_SHARING",
+                            "TRACKING_AND_PROFILING",
+                            "UNCLEAR_DATA_RETENTION",
+                            "RESTRICTED_USER_RIGHTS",
+                            "AUTOMATIC_RENEWAL",
+                            "DIFFICULT_CANCELLATION_OR_REFUND",
+                            "UNILATERAL_TERMS_CHANGES",
+                            "LIMITATION_OF_LIABILITY"
+                          ]
+                        },
+                        "severity": {
+                          "type": "string",
+                          "enum": [
+                            "LOW",
+                            "MEDIUM",
+                            "HIGH"
+                          ]
+                        },
+                        "sourceChunkId": {
+                          "type": "string",
+                          "minLength": 1,
+                          "maxLength": 100
+                        },
+                        "quote": {
+                          "type": "string",
+                          "minLength": 8,
+                          "maxLength": 1400
+                        },
+                        "explanationTr": {
+                          "type": "string",
+                          "minLength": 12,
+                          "maxLength": 600
+                        },
+                        "reasonTr": {
+                          "type": "string",
+                          "minLength": 12,
+                          "maxLength": 600
+                        },
+                        "findingId": {
+                          "type": "string"
+                        },
+                        "evidence": {
+                          "type": "object",
+                          "properties": {
+                            "sourceChunkId": {
+                              "type": "string"
+                            },
+                            "textHash": {
+                              "type": "string"
+                            },
+                            "documentHash": {
+                              "type": "string"
+                            },
+                            "start": {
+                              "type": "integer",
+                              "minimum": 0,
+                              "maximum": 9007199254740991
+                            },
+                            "end": {
+                              "type": "integer",
+                              "exclusiveMinimum": 0,
+                              "maximum": 9007199254740991
+                            },
+                            "occurrences": {
+                              "minItems": 1,
+                              "type": "array",
+                              "items": {
+                                "type": "integer",
+                                "minimum": 0,
+                                "maximum": 9007199254740991
+                              }
+                            },
+                            "sourceLocator": {
+                              "type": "object",
+                              "properties": {
+                                "selector": {
+                                  "type": "string"
+                                },
+                                "headingPath": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "string"
+                                  }
+                                },
+                                "textStart": {
+                                  "type": "integer",
+                                  "minimum": 0,
+                                  "maximum": 9007199254740991
+                                },
+                                "textEnd": {
+                                  "type": "integer",
+                                  "minimum": 0,
+                                  "maximum": 9007199254740991
+                                },
+                                "segments": {
+                                  "minItems": 1,
+                                  "type": "array",
+                                  "items": {
+                                    "type": "object",
+                                    "properties": {
+                                      "path": {
+                                        "type": "array",
+                                        "items": {
+                                          "type": "integer",
+                                          "minimum": 0,
+                                          "maximum": 9007199254740991
+                                        }
+                                      },
+                                      "start": {
+                                        "type": "integer",
+                                        "minimum": 0,
+                                        "maximum": 9007199254740991
+                                      },
+                                      "end": {
+                                        "type": "integer",
+                                        "minimum": 0,
+                                        "maximum": 9007199254740991
+                                      }
+                                    },
+                                    "required": [
+                                      "path",
+                                      "start",
+                                      "end"
+                                    ],
+                                    "additionalProperties": false
+                                  }
+                                }
+                              },
+                              "required": [
+                                "selector",
+                                "headingPath",
+                                "textStart",
+                                "textEnd",
+                                "segments"
+                              ],
+                              "additionalProperties": false
+                            }
+                          },
+                          "required": [
+                            "sourceChunkId",
+                            "textHash",
+                            "documentHash",
+                            "start",
+                            "end",
+                            "occurrences",
+                            "sourceLocator"
+                          ],
+                          "additionalProperties": false
+                        }
+                      },
+                      "required": [
+                        "category",
+                        "severity",
+                        "sourceChunkId",
+                        "quote",
+                        "explanationTr",
+                        "reasonTr",
+                        "findingId",
+                        "evidence"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "rejectedFindings": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "proposal": {
+                          "type": "object",
+                          "properties": {
+                            "category": {
+                              "type": "string",
+                              "enum": [
+                                "THIRD_PARTY_DATA_SHARING",
+                                "TRACKING_AND_PROFILING",
+                                "UNCLEAR_DATA_RETENTION",
+                                "RESTRICTED_USER_RIGHTS",
+                                "AUTOMATIC_RENEWAL",
+                                "DIFFICULT_CANCELLATION_OR_REFUND",
+                                "UNILATERAL_TERMS_CHANGES",
+                                "LIMITATION_OF_LIABILITY"
+                              ]
+                            },
+                            "severity": {
+                              "type": "string",
+                              "enum": [
+                                "LOW",
+                                "MEDIUM",
+                                "HIGH"
+                              ]
+                            },
+                            "sourceChunkId": {
+                              "type": "string",
+                              "minLength": 1,
+                              "maxLength": 100
+                            },
+                            "quote": {
+                              "type": "string",
+                              "minLength": 8,
+                              "maxLength": 1400
+                            },
+                            "explanationTr": {
+                              "type": "string",
+                              "minLength": 12,
+                              "maxLength": 600
+                            },
+                            "reasonTr": {
+                              "type": "string",
+                              "minLength": 12,
+                              "maxLength": 600
+                            }
+                          },
+                          "required": [
+                            "category",
+                            "severity",
+                            "sourceChunkId",
+                            "quote",
+                            "explanationTr",
+                            "reasonTr"
+                          ],
+                          "additionalProperties": false
+                        },
+                        "reason": {
+                          "type": "string",
+                          "enum": [
+                            "UNKNOWN_CHUNK",
+                            "OUTSIDE_BATCH",
+                            "QUOTE_MISMATCH",
+                            "VERSION_MISMATCH",
+                            "INTEGRITY_FAILURE",
+                            "CATEGORY_CONTEXT_MISMATCH"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "proposal",
+                        "reason"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "rejectedFindingCount": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  },
+                  "unresolvedIssues": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "coverage": {
+                    "type": "object",
+                    "properties": {
+                      "extractionStatus": {
+                        "type": "string",
+                        "enum": [
+                          "COMPLETE",
+                          "PARTIAL",
+                          "UNKNOWN",
+                          "FAILED"
+                        ]
+                      },
+                      "totalChunks": {
+                        "type": "integer",
+                        "minimum": 0,
+                        "maximum": 9007199254740991
+                      },
+                      "analyzedChunks": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "failedChunks": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "pendingChunks": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "batches": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "batchId": {
+                              "type": "string"
+                            },
+                            "chunkIds": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            },
+                            "estimatedPromptTokens": {
+                              "type": "integer",
+                              "minimum": 0,
+                              "maximum": 9007199254740991
+                            },
+                            "status": {
+                              "type": "string",
+                              "enum": [
+                                "PENDING",
+                                "COMPLETE",
+                                "FAILED",
+                                "CANCELLED"
+                              ]
+                            },
+                            "attempts": {
+                              "type": "integer",
+                              "minimum": 0,
+                              "maximum": 9007199254740991
+                            },
+                            "errors": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            },
+                            "timings": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "wallMs": {
+                                    "type": "number",
+                                    "minimum": 0
+                                  },
+                                  "promptTokens": {
+                                    "type": "integer",
+                                    "minimum": 0,
+                                    "maximum": 9007199254740991
+                                  },
+                                  "generatedTokens": {
+                                    "type": "integer",
+                                    "minimum": 0,
+                                    "maximum": 9007199254740991
+                                  },
+                                  "promptMs": {
+                                    "type": "number",
+                                    "minimum": 0
+                                  },
+                                  "generationMs": {
+                                    "type": "number",
+                                    "minimum": 0
+                                  },
+                                  "totalMs": {
+                                    "type": "number",
+                                    "minimum": 0
+                                  },
+                                  "loadMs": {
+                                    "type": "number",
+                                    "minimum": 0
+                                  },
+                                  "tokensPerSecond": {
+                                    "type": "number",
+                                    "minimum": 0
+                                  }
+                                },
+                                "required": [
+                                  "wallMs",
+                                  "promptTokens",
+                                  "generatedTokens",
+                                  "promptMs",
+                                  "generationMs",
+                                  "totalMs",
+                                  "loadMs",
+                                  "tokensPerSecond"
+                                ],
+                                "additionalProperties": false
+                              }
+                            }
+                          },
+                          "required": [
+                            "batchId",
+                            "chunkIds",
+                            "estimatedPromptTokens",
+                            "status",
+                            "attempts",
+                            "errors",
+                            "timings"
+                          ],
+                          "additionalProperties": false
+                        }
+                      }
+                    },
+                    "required": [
+                      "extractionStatus",
+                      "totalChunks",
+                      "analyzedChunks",
+                      "failedChunks",
+                      "pendingChunks",
+                      "batches"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "modelInfo": {
+                    "type": "object",
+                    "properties": {
+                      "provider": {
+                        "type": "string",
+                        "const": "ollama-local"
+                      },
+                      "model": {
+                        "type": "string",
+                        "const": "qwen3.5:9b-q4_K_M"
+                      },
+                      "contextSize": {
+                        "type": "number",
+                        "const": 8192
+                      }
+                    },
+                    "required": [
+                      "provider",
+                      "model",
+                      "contextSize"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "durationMs": {
+                    "type": "number",
+                    "minimum": 0
+                  },
+                  "warnings": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "required": [
+                  "documentId",
+                  "documentHash",
+                  "analyzedAt",
+                  "status",
+                  "score",
+                  "alarmLevel",
+                  "scoreWithheldReason",
+                  "categoryScores",
+                  "findings",
+                  "rejectedFindings",
+                  "rejectedFindingCount",
+                  "unresolvedIssues",
+                  "coverage",
+                  "modelInfo",
+                  "durationMs",
+                  "warnings"
+                ],
+                "additionalProperties": false
+              },
+              "disclaimer": {
+                "type": "string",
+                "const": "Bu uygulama hukuki tavsiye vermez."
+              }
+            },
+            "required": [
+              "report",
+              "disclaimer"
+            ],
+            "$schema": "https://json-schema.org/draft/2020-12/schema",
+            "additionalProperties": false
+          }
+        }
+      ]
+    },
+    {
+      "test": "categories-real-protocol",
+      "pass": true,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"categories\":[{\"id\":\"THIRD_PARTY_DATA_SHARING\",\"titleTr\":\"Üçüncü taraflarla veri paylaşımı\",\"descriptionTr\":\"Kişisel verilerin geniş veya belirsiz amaçlarla başkalarına aktarılması.\",\"weight\":20,\"guidance\":\"Broad identifiable-data sharing without user control; distinguish anonymized/consented sharing and protective exceptions.\"},{\"id\":\"TRACKING_AND_PROFILING\",\"titleTr\":\"Takip ve profilleme\",\"descriptionTr\":\"Kullanıcı davranışının kapsamlı izlenmesi veya reklam profiline dönüştürülmesi.\",\"weight\":15,\"guidance\":\"Broad behavioral tracking/profiling without meaningful choice; routine consent-based analytics alone is insufficient.\"},{\"id\":\"UNCLEAR_DATA_RETENTION\",\"titleTr\":\"Belirsiz veri saklama\",\"descriptionTr\":\"Verilerin belirsiz veya aşırı geniş süreyle saklanmasına izin veren ifadeler.\",\"weight\":14,\"guidance\":\"Explicit personal-data storage; affirmative indefinite/excessive duration only. As-needed periods without clear bounds go to unresolvedIssues. A specified deletion deadline with mandatory-record exceptions is bounded, not a finding or uncertainty. Missing wording/cancellation deadlines are not storage.\"},{\"id\":\"RESTRICTED_USER_RIGHTS\",\"titleTr\":\"Kullanıcı haklarının kısıtlanması\",\"descriptionTr\":\"Silme, itiraz, erişim veya sözleşmeden doğan hakların geniş biçimde sınırlandırılması.\",\"weight\":17,\"guidance\":\"Explicit significant restriction on rights; preserve mandatory-law exceptions and distinguish privacy rights from contractual rights.\"},{\"id\":\"AUTOMATIC_RENEWAL\",\"titleTr\":\"Otomatik yenileme\",\"descriptionTr\":\"Yenileme ve ücretlendirme koşullarının kullanıcıya anlamlı dezavantaj oluşturması.\",\"weight\":20,\"guidance\":\"Affirmative renewal plus disadvantage (no notice, long opt-out deadline); transparent reminders/easy cancellation mitigate. Never interpret denial as renewal.\"},{\"id\":\"DIFFICULT_CANCELLATION_OR_REFUND\",\"titleTr\":\"İptal veya iade güçlüğü\",\"descriptionTr\":\"İptal ve iadeyi zorlaştıran dar yollar veya geniş engeller.\",\"weight\":18,\"guidance\":\"Burdensome notice deadlines, cancellation channels or refund restrictions; easy access does not erase notice deadlines. Preserve legally required refund exceptions.\"},{\"id\":\"UNILATERAL_TERMS_CHANGES\",\"titleTr\":\"Tek taraflı koşul değişikliği\",\"descriptionTr\":\"Bildirim veya çıkış hakkı olmaksızın önemli koşulların değiştirilebilmesi.\",\"weight\":14,\"guidance\":\"Broad unilateral fee/term changes without notice/exit; vague arrangements without specified effect are unresolved, not an asserted contractual disadvantage.\"},{\"id\":\"LIMITATION_OF_LIABILITY\",\"titleTr\":\"Sorumluluğun sınırlandırılması\",\"descriptionTr\":\"Şirketin sorumluluğunu geniş biçimde dışlayan hükümler.\",\"weight\":12,\"guidance\":\"Meaningful damages caps/broad exclusions: state scope and mandatory-law exceptions; protections qualify, not erase, the cap. Foreseeability/warranty disclaimers alone are not caps.\"}]}"
+          }
+        ],
+        "structuredContent": {
+          "categories": [
+            {
+              "id": "THIRD_PARTY_DATA_SHARING",
+              "titleTr": "Üçüncü taraflarla veri paylaşımı",
+              "descriptionTr": "Kişisel verilerin geniş veya belirsiz amaçlarla başkalarına aktarılması.",
+              "weight": 20,
+              "guidance": "Broad identifiable-data sharing without user control; distinguish anonymized/consented sharing and protective exceptions."
+            },
+            {
+              "id": "TRACKING_AND_PROFILING",
+              "titleTr": "Takip ve profilleme",
+              "descriptionTr": "Kullanıcı davranışının kapsamlı izlenmesi veya reklam profiline dönüştürülmesi.",
+              "weight": 15,
+              "guidance": "Broad behavioral tracking/profiling without meaningful choice; routine consent-based analytics alone is insufficient."
+            },
+            {
+              "id": "UNCLEAR_DATA_RETENTION",
+              "titleTr": "Belirsiz veri saklama",
+              "descriptionTr": "Verilerin belirsiz veya aşırı geniş süreyle saklanmasına izin veren ifadeler.",
+              "weight": 14,
+              "guidance": "Explicit personal-data storage; affirmative indefinite/excessive duration only. As-needed periods without clear bounds go to unresolvedIssues. A specified deletion deadline with mandatory-record exceptions is bounded, not a finding or uncertainty. Missing wording/cancellation deadlines are not storage."
+            },
+            {
+              "id": "RESTRICTED_USER_RIGHTS",
+              "titleTr": "Kullanıcı haklarının kısıtlanması",
+              "descriptionTr": "Silme, itiraz, erişim veya sözleşmeden doğan hakların geniş biçimde sınırlandırılması.",
+              "weight": 17,
+              "guidance": "Explicit significant restriction on rights; preserve mandatory-law exceptions and distinguish privacy rights from contractual rights."
+            },
+            {
+              "id": "AUTOMATIC_RENEWAL",
+              "titleTr": "Otomatik yenileme",
+              "descriptionTr": "Yenileme ve ücretlendirme koşullarının kullanıcıya anlamlı dezavantaj oluşturması.",
+              "weight": 20,
+              "guidance": "Affirmative renewal plus disadvantage (no notice, long opt-out deadline); transparent reminders/easy cancellation mitigate. Never interpret denial as renewal."
+            },
+            {
+              "id": "DIFFICULT_CANCELLATION_OR_REFUND",
+              "titleTr": "İptal veya iade güçlüğü",
+              "descriptionTr": "İptal ve iadeyi zorlaştıran dar yollar veya geniş engeller.",
+              "weight": 18,
+              "guidance": "Burdensome notice deadlines, cancellation channels or refund restrictions; easy access does not erase notice deadlines. Preserve legally required refund exceptions."
+            },
+            {
+              "id": "UNILATERAL_TERMS_CHANGES",
+              "titleTr": "Tek taraflı koşul değişikliği",
+              "descriptionTr": "Bildirim veya çıkış hakkı olmaksızın önemli koşulların değiştirilebilmesi.",
+              "weight": 14,
+              "guidance": "Broad unilateral fee/term changes without notice/exit; vague arrangements without specified effect are unresolved, not an asserted contractual disadvantage."
+            },
+            {
+              "id": "LIMITATION_OF_LIABILITY",
+              "titleTr": "Sorumluluğun sınırlandırılması",
+              "descriptionTr": "Şirketin sorumluluğunu geniş biçimde dışlayan hükümler.",
+              "weight": 12,
+              "guidance": "Meaningful damages caps/broad exclusions: state scope and mandatory-law exceptions; protections qualify, not erase, the cap. Foreseeability/warranty disclaimers alone are not caps."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "test": "evidence-real-protocol",
+      "pass": true,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"documentId\":\"37cc097d01f9d668f10ec907462966f13008d43347bc7e38a957a64996b814b5\",\"documentHash\":\"a8b483cb37cb35a80338c644730ae994a0fe82a54cfbebe6a344ed13b6b954c3\",\"sourceChunkId\":\"3ec17f65256d2b74d6c8d48e3076cf8a0809ff6813034fa0f0d2911bc5e9f15b\",\"verified\":true,\"accepted\":{\"category\":\"AUTOMATIC_RENEWAL\",\"severity\":\"LOW\",\"sourceChunkId\":\"3ec17f65256d2b74d6c8d48e3076cf8a0809ff6813034fa0f0d2911bc5e9f15b\",\"quote\":\"Your subscription automatically renews each month without advance reminders. Cancellation must reach us thirty days before renewal.\",\"explanationTr\":\"Açıkça sağlanan metne karşı kaynak alıntısı doğrulaması.\",\"reasonTr\":\"Bu araç anlamsal veya hukuki doğruluk onayı vermez.\",\"findingId\":\"9635d4278f5f26ad7d1f270c598494d1ca1c18a4b7ad18c8b2166868fa0d26c2\",\"evidence\":{\"sourceChunkId\":\"3ec17f65256d2b74d6c8d48e3076cf8a0809ff6813034fa0f0d2911bc5e9f15b\",\"textHash\":\"a6ab13749c0e33f6a2401958894d6e28600f41f8933ed12ba3f494d073dc124d\",\"documentHash\":\"a8b483cb37cb35a80338c644730ae994a0fe82a54cfbebe6a344ed13b6b954c3\",\"start\":0,\"end\":131,\"occurrences\":[0],\"sourceLocator\":{\"selector\":\"html > body:nth-of-type(1) > main:nth-of-type(1) > p:nth-of-type(1)\",\"headingPath\":[\"Subscription Terms\"],\"textStart\":0,\"textEnd\":131,\"segments\":[{\"path\":[0],\"start\":0,\"end\":131}]}}}}"
+          }
+        ],
+        "structuredContent": {
+          "documentId": "37cc097d01f9d668f10ec907462966f13008d43347bc7e38a957a64996b814b5",
+          "documentHash": "a8b483cb37cb35a80338c644730ae994a0fe82a54cfbebe6a344ed13b6b954c3",
+          "sourceChunkId": "3ec17f65256d2b74d6c8d48e3076cf8a0809ff6813034fa0f0d2911bc5e9f15b",
+          "verified": true,
+          "accepted": {
+            "category": "AUTOMATIC_RENEWAL",
+            "severity": "LOW",
+            "sourceChunkId": "3ec17f65256d2b74d6c8d48e3076cf8a0809ff6813034fa0f0d2911bc5e9f15b",
+            "quote": "Your subscription automatically renews each month without advance reminders. Cancellation must reach us thirty days before renewal.",
+            "explanationTr": "Açıkça sağlanan metne karşı kaynak alıntısı doğrulaması.",
+            "reasonTr": "Bu araç anlamsal veya hukuki doğruluk onayı vermez.",
+            "findingId": "9635d4278f5f26ad7d1f270c598494d1ca1c18a4b7ad18c8b2166868fa0d26c2",
+            "evidence": {
+              "sourceChunkId": "3ec17f65256d2b74d6c8d48e3076cf8a0809ff6813034fa0f0d2911bc5e9f15b",
+              "textHash": "a6ab13749c0e33f6a2401958894d6e28600f41f8933ed12ba3f494d073dc124d",
+              "documentHash": "a8b483cb37cb35a80338c644730ae994a0fe82a54cfbebe6a344ed13b6b954c3",
+              "start": 0,
+              "end": 131,
+              "occurrences": [
+                0
+              ],
+              "sourceLocator": {
+                "selector": "html > body:nth-of-type(1) > main:nth-of-type(1) > p:nth-of-type(1)",
+                "headingPath": [
+                  "Subscription Terms"
+                ],
+                "textStart": 0,
+                "textEnd": 131,
+                "segments": [
+                  {
+                    "path": [
+                      0
+                    ],
+                    "start": 0,
+                    "end": 131
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "test": "invented-quote-rejected",
+      "pass": true,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"documentId\":\"37cc097d01f9d668f10ec907462966f13008d43347bc7e38a957a64996b814b5\",\"documentHash\":\"a8b483cb37cb35a80338c644730ae994a0fe82a54cfbebe6a344ed13b6b954c3\",\"sourceChunkId\":\"3ec17f65256d2b74d6c8d48e3076cf8a0809ff6813034fa0f0d2911bc5e9f15b\",\"verified\":false,\"rejected\":{\"proposal\":{\"category\":\"AUTOMATIC_RENEWAL\",\"severity\":\"LOW\",\"sourceChunkId\":\"3ec17f65256d2b74d6c8d48e3076cf8a0809ff6813034fa0f0d2911bc5e9f15b\",\"quote\":\"Fabricated source quotation.\",\"explanationTr\":\"Açıkça sağlanan metne karşı kaynak alıntısı doğrulaması.\",\"reasonTr\":\"Bu araç anlamsal veya hukuki doğruluk onayı vermez.\"},\"reason\":\"QUOTE_MISMATCH\"}}"
+          }
+        ],
+        "structuredContent": {
+          "documentId": "37cc097d01f9d668f10ec907462966f13008d43347bc7e38a957a64996b814b5",
+          "documentHash": "a8b483cb37cb35a80338c644730ae994a0fe82a54cfbebe6a344ed13b6b954c3",
+          "sourceChunkId": "3ec17f65256d2b74d6c8d48e3076cf8a0809ff6813034fa0f0d2911bc5e9f15b",
+          "verified": false,
+          "rejected": {
+            "proposal": {
+              "category": "AUTOMATIC_RENEWAL",
+              "severity": "LOW",
+              "sourceChunkId": "3ec17f65256d2b74d6c8d48e3076cf8a0809ff6813034fa0f0d2911bc5e9f15b",
+              "quote": "Fabricated source quotation.",
+              "explanationTr": "Açıkça sağlanan metne karşı kaynak alıntısı doğrulaması.",
+              "reasonTr": "Bu araç anlamsal veya hukuki doğruluk onayı vermez."
+            },
+            "reason": "QUOTE_MISMATCH"
+          }
+        }
+      }
+    },
+    {
+      "test": "invalid-arguments-rejected",
+      "pass": true,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Input validation error: Invalid arguments for tool verify_evidence: category: Invalid option: expected one of \"THIRD_PARTY_DATA_SHARING\"|\"TRACKING_AND_PROFILING\"|\"UNCLEAR_DATA_RETENTION\"|\"RESTRICTED_USER_RIGHTS\"|\"AUTOMATIC_RENEWAL\"|\"DIFFICULT_CANCELLATION_OR_REFUND\"|\"UNILATERAL_TERMS_CHANGES\"|\"LIMITATION_OF_LIABILITY\", Unrecognized key: \"filePath\""
+          }
+        ],
+        "isError": true
+      }
+    },
+    {
+      "test": "actual-local-Qwen-analysis",
+      "pass": true,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"report\":{\"documentId\":\"37cc097d01f9d668f10ec907462966f13008d43347bc7e38a957a64996b814b5\",\"documentHash\":\"a8b483cb37cb35a80338c644730ae994a0fe82a54cfbebe6a344ed13b6b954c3\",\"analyzedAt\":\"2026-10-14T11:14:41.389Z\",\"status\":\"PARTIAL\",\"score\":null,\"alarmLevel\":null,\"scoreWithheldReason\":\"Extraction coverage is UNKNOWN.\",\"categoryScores\":{},\"findings\":[{\"category\":\"DIFFICULT_CANCELLATION_OR_REFUND\",\"severity\":\"MEDIUM\",\"sourceChunkId\":\"3ec17f65256d2b74d6c8d48e3076cf8a0809ff6813034fa0f0d2911bc5e9f15b\",\"quote\":\"Cancellation must reach us thirty days before renewal.\",\"explanationTr\":\"Sözleşme, yenilmeden 30 gün önce iptalin yapılmasını şart koşar. Bu, kullanıcıların faturalandırma döngüsünün son aşamasına kadar beklemesini gerektiren bir yükümlülüktür ve kolay erişim kanalları olsa bile bu bildirim süresi dezavantajı ortadan kaldırmaz.\",\"reasonTr\":\"İptal için 30 günlük bildirimi zorunlu; yenilmeden hemen önce iptal edilemez.\",\"findingId\":\"3c9b0822968a303a7595d5e1840e10fa91e12e8dd93c753db3566c393939ea37\",\"evidence\":{\"sourceChunkId\":\"3ec17f65256d2b74d6c8d48e3076cf8a0809ff6813034fa0f0d2911bc5e9f15b\",\"textHash\":\"a6ab13749c0e33f6a2401958894d6e28600f41f8933ed12ba3f494d073dc124d\",\"documentHash\":\"a8b483cb37cb35a80338c644730ae994a0fe82a54cfbebe6a344ed13b6b954c3\",\"start\":77,\"end\":131,\"occurrences\":[77],\"sourceLocator\":{\"selector\":\"html > body:nth-of-type(1) > main:nth-of-type(1) > p:nth-of-type(1)\",\"headingPath\":[\"Subscription Terms\"],\"textStart\":0,\"textEnd\":131,\"segments\":[{\"path\":[0],\"start\":0,\"end\":131}]}}},{\"category\":\"AUTOMATIC_RENEWAL\",\"severity\":\"HIGH\",\"sourceChunkId\":\"3ec17f65256d2b74d6c8d48e3076cf8a0809ff6813034fa0f0d2911bc5e9f15b\",\"quote\":\"Your subscription automatically renews each month without advance reminders. Cancellation must reach us thirty days before renewal.\",\"explanationTr\":\"Bu madde, kullanıcıya yenilenmeden önce uyarı verilmemesi (advance reminders) dezavantajını ve iptal için gereken 30 günlük opt-out süresinin uzunluğunu belirtir. Bu durum, kullanıcının faturalandırılmadan önce sözleşmeyi sonlandırmayı planlama yetisini kısıtlar.\",\"reasonTr\":\"Yenilme bildirimi yok; iptal süresi 30 gün (uzun).\",\"findingId\":\"9635d4278f5f26ad7d1f270c598494d1ca1c18a4b7ad18c8b2166868fa0d26c2\",\"evidence\":{\"sourceChunkId\":\"3ec17f65256d2b74d6c8d48e3076cf8a0809ff6813034fa0f0d2911bc5e9f15b\",\"textHash\":\"a6ab13749c0e33f6a2401958894d6e28600f41f8933ed12ba3f494d073dc124d\",\"documentHash\":\"a8b483cb37cb35a80338c644730ae994a0fe82a54cfbebe6a344ed13b6b954c3\",\"start\":0,\"end\":131,\"occurrences\":[0],\"sourceLocator\":{\"selector\":\"html > body:nth-of-type(1) > main:nth-of-type(1) > p:nth-of-type(1)\",\"headingPath\":[\"Subscription Terms\"],\"textStart\":0,\"textEnd\":131,\"segments\":[{\"path\":[0],\"start\":0,\"end\":131}]}}}],\"rejectedFindings\":[],\"rejectedFindingCount\":0,\"unresolvedIssues\":[],\"coverage\":{\"extractionStatus\":\"UNKNOWN\",\"totalChunks\":2,\"analyzedChunks\":[\"71fb9b56dfe89dbe457f63794cbfffd33d457bc28f361fbf52b6f7260cac3c49\",\"3ec17f65256d2b74d6c8d48e3076cf8a0809ff6813034fa0f0d2911bc5e9f15b\"],\"failedChunks\":[],\"pendingChunks\":[],\"batches\":[{\"batchId\":\"batch-1\",\"chunkIds\":[\"71fb9b56dfe89dbe457f63794cbfffd33d457bc28f361fbf52b6f7260cac3c49\",\"3ec17f65256d2b74d6c8d48e3076cf8a0809ff6813034fa0f0d2911bc5e9f15b\"],\"estimatedPromptTokens\":4218,\"status\":\"COMPLETE\",\"attempts\":1,\"errors\":[],\"timings\":[{\"wallMs\":12774.825100000002,\"promptTokens\":611,\"generatedTokens\":487,\"promptMs\":430.667,\"generationMs\":12314.344,\"totalMs\":12770.4514,\"loadMs\":14.5756,\"tokensPerSecond\":39.547376620305556}]}]},\"modelInfo\":{\"provider\":\"ollama-local\",\"model\":\"qwen3.5:9b-q4_K_M\",\"contextSize\":8192},\"durationMs\":12796.784800000001,\"warnings\":[\"Accessible legal text extracted; completeness is unverified.\"]},\"disclaimer\":\"Bu uygulama hukuki tavsiye vermez.\"}"
+          }
+        ],
+        "structuredContent": {
+          "report": {
+            "documentId": "37cc097d01f9d668f10ec907462966f13008d43347bc7e38a957a64996b814b5",
+            "documentHash": "a8b483cb37cb35a80338c644730ae994a0fe82a54cfbebe6a344ed13b6b954c3",
+            "analyzedAt": "2026-10-14T11:14:41.389Z",
+            "status": "PARTIAL",
+            "score": null,
+            "alarmLevel": null,
+            "scoreWithheldReason": "Extraction coverage is UNKNOWN.",
+            "categoryScores": {},
+            "findings": [
+              {
+                "category": "DIFFICULT_CANCELLATION_OR_REFUND",
+                "severity": "MEDIUM",
+                "sourceChunkId": "3ec17f65256d2b74d6c8d48e3076cf8a0809ff6813034fa0f0d2911bc5e9f15b",
+                "quote": "Cancellation must reach us thirty days before renewal.",
+                "explanationTr": "Sözleşme, yenilmeden 30 gün önce iptalin yapılmasını şart koşar. Bu, kullanıcıların faturalandırma döngüsünün son aşamasına kadar beklemesini gerektiren bir yükümlülüktür ve kolay erişim kanalları olsa bile bu bildirim süresi dezavantajı ortadan kaldırmaz.",
+                "reasonTr": "İptal için 30 günlük bildirimi zorunlu; yenilmeden hemen önce iptal edilemez.",
+                "findingId": "3c9b0822968a303a7595d5e1840e10fa91e12e8dd93c753db3566c393939ea37",
+                "evidence": {
+                  "sourceChunkId": "3ec17f65256d2b74d6c8d48e3076cf8a0809ff6813034fa0f0d2911bc5e9f15b",
+                  "textHash": "a6ab13749c0e33f6a2401958894d6e28600f41f8933ed12ba3f494d073dc124d",
+                  "documentHash": "a8b483cb37cb35a80338c644730ae994a0fe82a54cfbebe6a344ed13b6b954c3",
+                  "start": 77,
+                  "end": 131,
+                  "occurrences": [
+                    77
+                  ],
+                  "sourceLocator": {
+                    "selector": "html > body:nth-of-type(1) > main:nth-of-type(1) > p:nth-of-type(1)",
+                    "headingPath": [
+                      "Subscription Terms"
+                    ],
+                    "textStart": 0,
+                    "textEnd": 131,
+                    "segments": [
+                      {
+                        "path": [
+                          0
+                        ],
+                        "start": 0,
+                        "end": 131
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "category": "AUTOMATIC_RENEWAL",
+                "severity": "HIGH",
+                "sourceChunkId": "3ec17f65256d2b74d6c8d48e3076cf8a0809ff6813034fa0f0d2911bc5e9f15b",
+                "quote": "Your subscription automatically renews each month without advance reminders. Cancellation must reach us thirty days before renewal.",
+                "explanationTr": "Bu madde, kullanıcıya yenilenmeden önce uyarı verilmemesi (advance reminders) dezavantajını ve iptal için gereken 30 günlük opt-out süresinin uzunluğunu belirtir. Bu durum, kullanıcının faturalandırılmadan önce sözleşmeyi sonlandırmayı planlama yetisini kısıtlar.",
+                "reasonTr": "Yenilme bildirimi yok; iptal süresi 30 gün (uzun).",
+                "findingId": "9635d4278f5f26ad7d1f270c598494d1ca1c18a4b7ad18c8b2166868fa0d26c2",
+                "evidence": {
+                  "sourceChunkId": "3ec17f65256d2b74d6c8d48e3076cf8a0809ff6813034fa0f0d2911bc5e9f15b",
+                  "textHash": "a6ab13749c0e33f6a2401958894d6e28600f41f8933ed12ba3f494d073dc124d",
+                  "documentHash": "a8b483cb37cb35a80338c644730ae994a0fe82a54cfbebe6a344ed13b6b954c3",
+                  "start": 0,
+                  "end": 131,
+                  "occurrences": [
+                    0
+                  ],
+                  "sourceLocator": {
+                    "selector": "html > body:nth-of-type(1) > main:nth-of-type(1) > p:nth-of-type(1)",
+                    "headingPath": [
+                      "Subscription Terms"
+                    ],
+                    "textStart": 0,
+                    "textEnd": 131,
+                    "segments": [
+                      {
+                        "path": [
+                          0
+                        ],
+                        "start": 0,
+                        "end": 131
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "rejectedFindings": [],
+            "rejectedFindingCount": 0,
+            "unresolvedIssues": [],
+            "coverage": {
+              "extractionStatus": "UNKNOWN",
+              "totalChunks": 2,
+              "analyzedChunks": [
+                "71fb9b56dfe89dbe457f63794cbfffd33d457bc28f361fbf52b6f7260cac3c49",
+                "3ec17f65256d2b74d6c8d48e3076cf8a0809ff6813034fa0f0d2911bc5e9f15b"
+              ],
+              "failedChunks": [],
+              "pendingChunks": [],
+              "batches": [
+                {
+                  "batchId": "batch-1",
+                  "chunkIds": [
+                    "71fb9b56dfe89dbe457f63794cbfffd33d457bc28f361fbf52b6f7260cac3c49",
+                    "3ec17f65256d2b74d6c8d48e3076cf8a0809ff6813034fa0f0d2911bc5e9f15b"
+                  ],
+                  "estimatedPromptTokens": 4218,
+                  "status": "COMPLETE",
+                  "attempts": 1,
+                  "errors": [],
+                  "timings": [
+                    {
+                      "wallMs": 12774.825100000002,
+                      "promptTokens": 611,
+                      "generatedTokens": 487,
+                      "promptMs": 430.667,
+                      "generationMs": 12314.344,
+                      "totalMs": 12770.4514,
+                      "loadMs": 14.5756,
+                      "tokensPerSecond": 39.547376620305556
+                    }
+                  ]
+                }
+              ]
+            },
+            "modelInfo": {
+              "provider": "ollama-local",
+              "model": "qwen3.5:9b-q4_K_M",
+              "contextSize": 8192
+            },
+            "durationMs": 12796.784800000001,
+            "warnings": [
+              "Accessible legal text extracted; completeness is unverified."
+            ]
+          },
+          "disclaimer": "Bu uygulama hukuki tavsiye vermez."
+        }
+      }
+    }
+  ],
+  "journal": [
+    {
+      "direction": "CLIENT_TO_SERVER",
+      "at": "2026-10-14T11:14:37.304Z",
+      "message": {
+        "method": "initialize",
+        "params": {
+          "protocolVersion": "2025-11-25",
+          "capabilities": {},
+          "clientInfo": {
+            "name": "clauseguard-verification-client",
+            "version": "1.0.0"
+          }
+        },
+        "jsonrpc": "2.0",
+        "id": 0
+      }
+    },
+    {
+      "direction": "CLIENT_TO_SERVER",
+      "at": "2026-10-14T11:14:37.897Z",
+      "message": {
+        "jsonrpc": "2.0",
+        "method": "notifications/initialized"
+      }
+    },
+    {
+      "direction": "CLIENT_TO_SERVER",
+      "at": "2026-10-14T11:14:37.897Z",
+      "message": {
+        "method": "tools/list",
+        "jsonrpc": "2.0",
+        "id": 1
+      }
+    },
+    {
+      "direction": "CLIENT_TO_SERVER",
+      "at": "2026-10-14T11:14:37.937Z",
+      "message": {
+        "method": "tools/call",
+        "params": {
+          "name": "get_risk_categories",
+          "arguments": {}
+        },
+        "jsonrpc": "2.0",
+        "id": 2
+      }
+    },
+    {
+      "direction": "CLIENT_TO_SERVER",
+      "at": "2026-10-14T11:14:37.944Z",
+      "message": {
+        "method": "tools/call",
+        "params": {
+          "name": "verify_evidence",
+          "arguments": {
+            "sourceId": "mcp-demo",
+            "documentText": "Your subscription automatically renews each month without advance reminders. Cancellation must reach us thirty days before renewal.",
+            "quote": "Your subscription automatically renews each month without advance reminders. Cancellation must reach us thirty days before renewal.",
+            "category": "AUTOMATIC_RENEWAL"
+          }
+        },
+        "jsonrpc": "2.0",
+        "id": 3
+      }
+    },
+    {
+      "direction": "CLIENT_TO_SERVER",
+      "at": "2026-10-14T11:14:38.023Z",
+      "message": {
+        "method": "tools/call",
+        "params": {
+          "name": "verify_evidence",
+          "arguments": {
+            "sourceId": "mcp-demo",
+            "documentText": "Your subscription automatically renews each month without advance reminders. Cancellation must reach us thirty days before renewal.",
+            "quote": "Fabricated source quotation.",
+            "category": "AUTOMATIC_RENEWAL"
+          }
+        },
+        "jsonrpc": "2.0",
+        "id": 4
+      }
+    },
+    {
+      "direction": "CLIENT_TO_SERVER",
+      "at": "2026-10-14T11:14:38.044Z",
+      "message": {
+        "method": "tools/call",
+        "params": {
+          "name": "verify_evidence",
+          "arguments": {
+            "sourceId": "mcp-demo",
+            "documentText": "Your subscription automatically renews each month without advance reminders. Cancellation must reach us thirty days before renewal.",
+            "quote": "Your subscription automatically renews each month without advance reminders. Cancellation must reach us thirty days before renewal.",
+            "category": "INVALID",
+            "filePath": "unrelated"
+          }
+        },
+        "jsonrpc": "2.0",
+        "id": 5
+      }
+    },
+    {
+      "direction": "CLIENT_TO_SERVER",
+      "at": "2026-10-14T11:14:38.046Z",
+      "message": {
+        "method": "tools/call",
+        "params": {
+          "name": "analyze_document",
+          "arguments": {
+            "sourceId": "mcp-demo",
+            "documentText": "Your subscription automatically renews each month without advance reminders. Cancellation must reach us thirty days before renewal."
+          }
+        },
+        "jsonrpc": "2.0",
+        "id": 6
+      }
+    }
+  ]
+}

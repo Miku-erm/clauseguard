@@ -1,0 +1,214 @@
+{
+  "at": "2026-10-13T20:47:33.145Z",
+  "config": {
+    "model": "qwen3.5:9b-q4_K_M",
+    "context": 8192,
+    "temperature": 0,
+    "output": 1536,
+    "scope": "predeclared-reference-batches",
+    "promptHash": "083e7ac4ff2cb2f5fa92c1d0ae64021aa31635463c35bf3697cb46340d56bd2b",
+    "goldHash": "5bd3a2c09c9a6eb0145faf9ae7252792554e80f029409e59003cd8395bbc739e"
+  },
+  "freshCalls": 6,
+  "cachedDocuments": 0,
+  "privateNetwork": ".local/p4/predictions/network-1791924453143.json",
+  "privateGpu": ".local/p4/predictions/gpu-1791924453143.json",
+  "gpu": {
+    "samples": 139,
+    "fullGpu": true,
+    "peakVramMiB": 7683,
+    "peakCompute": 100
+  },
+  "documents": [
+    {
+      "sourceId": "github",
+      "documentId": "ec663a5163bd99628f5d06adc27f963fde767eff706fccce66d7dff996a24393",
+      "documentHash": "88f85845caf52f3f0c5b2ca7862589cd78f35256e0115a281d7547854660b271",
+      "config": {
+        "model": "qwen3.5:9b-q4_K_M",
+        "context": 8192,
+        "temperature": 0,
+        "output": 1536,
+        "scope": "predeclared-reference-batches",
+        "promptHash": "083e7ac4ff2cb2f5fa92c1d0ae64021aa31635463c35bf3697cb46340d56bd2b",
+        "goldHash": "5bd3a2c09c9a6eb0145faf9ae7252792554e80f029409e59003cd8395bbc739e"
+      },
+      "provenance": "FRESH",
+      "at": "2026-10-13T20:45:33.707Z",
+      "extractionCoverage": "PARTIAL",
+      "totalChunks": 254,
+      "totalAvailableBatches": 83,
+      "selectedBatches": 1,
+      "analyzedChunks": [
+        "746369de138b74a1e11814a9f7731bc5077f5f45af50655759c5c922846f87bf",
+        "c2c8a56ae48615771aca822d32a63418ccf8af5cf2362b8957e59440c164c7aa",
+        "f135cfb0304250dc10073515cff0784abf95e0f41cd2f5f0df0d733eaef51e3e"
+      ],
+      "unbatchable": [],
+      "errors": [],
+      "modelCalls": 1,
+      "durationMs": 19241.7922,
+      "score": null,
+      "scoreWithheldReason": "Selected-clause evaluation / incomplete extraction; no complete-document score",
+      "cachePath": ".local/p4/predictions/github-083e7ac4ff2c-selected.json",
+      "accepted": 2,
+      "rejected": 0,
+      "promptTokens": 1046,
+      "generatedTokens": 697,
+      "generationMs": 18105.824
+    },
+    {
+      "sourceId": "discord",
+      "documentId": "5e33d591a1e36425d94b08effc8db049f5be71c78927a4b00024f7f97c097189",
+      "documentHash": "d8a787422698ac39949615715a78f06985db7346f4bd77e0c3abe4d344faeec5",
+      "config": {
+        "model": "qwen3.5:9b-q4_K_M",
+        "context": 8192,
+        "temperature": 0,
+        "output": 1536,
+        "scope": "predeclared-reference-batches",
+        "promptHash": "083e7ac4ff2cb2f5fa92c1d0ae64021aa31635463c35bf3697cb46340d56bd2b",
+        "goldHash": "5bd3a2c09c9a6eb0145faf9ae7252792554e80f029409e59003cd8395bbc739e"
+      },
+      "provenance": "FRESH",
+      "at": "2026-10-13T20:46:01.713Z",
+      "extractionCoverage": "UNKNOWN",
+      "totalChunks": 188,
+      "totalAvailableBatches": 77,
+      "selectedBatches": 1,
+      "analyzedChunks": [
+        "f6301e36f04b885a40fc42cb65312371595c94a04a1db48759ec100e534dc61a",
+        "5042cc1874bf384e52321d476a3fc2a2da9d6cb857b743d9ebbd1ede11e2031f"
+      ],
+      "unbatchable": [
+        "724066380a6ceeee4decbc81ae26e24b411eedcdbd408b1dda913035ca1b8bd4"
+      ],
+      "errors": [],
+      "modelCalls": 1,
+      "durationMs": 27988.616899999997,
+      "score": null,
+      "scoreWithheldReason": "Selected-clause evaluation / incomplete extraction; no complete-document score",
+      "cachePath": ".local/p4/predictions/discord-083e7ac4ff2c-selected.json",
+      "accepted": 3,
+      "rejected": 0,
+      "promptTokens": 1216,
+      "generatedTokens": 1058,
+      "generationMs": 27453.451
+    },
+    {
+      "sourceId": "reddit",
+      "documentId": "c04dac908c7b3bf7ad804a9b432504b9170766f41893fb6d2e16205d217afd9d",
+      "documentHash": "a6d182b4aa6bac3bf3c629db787391a217f933d70a2c5664c9c6ed541295b6a9",
+      "config": {
+        "model": "qwen3.5:9b-q4_K_M",
+        "context": 8192,
+        "temperature": 0,
+        "output": 1536,
+        "scope": "predeclared-reference-batches",
+        "promptHash": "083e7ac4ff2cb2f5fa92c1d0ae64021aa31635463c35bf3697cb46340d56bd2b",
+        "goldHash": "5bd3a2c09c9a6eb0145faf9ae7252792554e80f029409e59003cd8395bbc739e"
+      },
+      "provenance": "FRESH",
+      "at": "2026-10-13T20:46:01.719Z",
+      "extractionCoverage": "UNKNOWN",
+      "totalChunks": 71,
+      "totalAvailableBatches": 31,
+      "selectedBatches": 0,
+      "analyzedChunks": [],
+      "unbatchable": [
+        "8c3445c1aff37e75ce865b59a637feed49101a8bdd8525c2766c49da6f0704b5"
+      ],
+      "errors": [],
+      "modelCalls": 0,
+      "durationMs": 0.023099999998521525,
+      "score": null,
+      "scoreWithheldReason": "Selected-clause evaluation / incomplete extraction; no complete-document score",
+      "cachePath": ".local/p4/predictions/reddit-083e7ac4ff2c-selected.json",
+      "accepted": 0,
+      "rejected": 0,
+      "promptTokens": 0,
+      "generatedTokens": 0,
+      "generationMs": 0
+    },
+    {
+      "sourceId": "spotify",
+      "documentId": "278c3ff4f7fdf0abaaf917cd7738da10fa884bf6973fdac47d262a354c9a5fd8",
+      "documentHash": "401d734db094bd386eeae685f497ccff9dfd663d78ce5c67a1f7335f2cc1f100",
+      "config": {
+        "model": "qwen3.5:9b-q4_K_M",
+        "context": 8192,
+        "temperature": 0,
+        "output": 1536,
+        "scope": "predeclared-reference-batches",
+        "promptHash": "083e7ac4ff2cb2f5fa92c1d0ae64021aa31635463c35bf3697cb46340d56bd2b",
+        "goldHash": "5bd3a2c09c9a6eb0145faf9ae7252792554e80f029409e59003cd8395bbc739e"
+      },
+      "provenance": "FRESH",
+      "at": "2026-10-13T20:46:40.349Z",
+      "extractionCoverage": "UNKNOWN",
+      "totalChunks": 170,
+      "totalAvailableBatches": 67,
+      "selectedBatches": 2,
+      "analyzedChunks": [
+        "6151e09f0a79be58cbd794b481534739d2bbd1e543e12e228412b8a6d53b3dfd",
+        "4ce6d00cbebc7c7568d95586b30b1bb0731ffd01a9fd6d2d7519e1135caeecb6",
+        "11ff8fd0e81e2a8e407fd164eb1bd150986dab25a1028cd946ff1da21d3daeed",
+        "683318f2c568ada63dc89116d455c346d77c7e7cfa94afd57a5d9ebce3fa95f2"
+      ],
+      "unbatchable": [
+        "22837122d51ebed681d0d7247d137d1e3ddbf735e21a05c4ab7b1ce5fc5486a4",
+        "c6336c6071a87dcf68aca2072e3818964c8601e13069d71aa3a596bb8dff708d"
+      ],
+      "errors": [],
+      "modelCalls": 2,
+      "durationMs": 38615.590099999994,
+      "score": null,
+      "scoreWithheldReason": "Selected-clause evaluation / incomplete extraction; no complete-document score",
+      "cachePath": ".local/p4/predictions/spotify-083e7ac4ff2c-selected.json",
+      "accepted": 4,
+      "rejected": 0,
+      "promptTokens": 2329,
+      "generatedTokens": 1446,
+      "generationMs": 37627.701
+    },
+    {
+      "sourceId": "dropbox",
+      "documentId": "16614e62bcb6cdfbcde07fa0311a351ab3157377d6de8e0dfc45f56ae6bfdd8c",
+      "documentHash": "26d95f6839e56300785f89845f1496335e4819c8b0e1392fd15bc9c857d01c23",
+      "config": {
+        "model": "qwen3.5:9b-q4_K_M",
+        "context": 8192,
+        "temperature": 0,
+        "output": 1536,
+        "scope": "predeclared-reference-batches",
+        "promptHash": "083e7ac4ff2cb2f5fa92c1d0ae64021aa31635463c35bf3697cb46340d56bd2b",
+        "goldHash": "5bd3a2c09c9a6eb0145faf9ae7252792554e80f029409e59003cd8395bbc739e"
+      },
+      "provenance": "FRESH",
+      "at": "2026-10-13T20:47:33.068Z",
+      "extractionCoverage": "UNKNOWN",
+      "totalChunks": 97,
+      "totalAvailableBatches": 28,
+      "selectedBatches": 2,
+      "analyzedChunks": [
+        "588f0023e841a9c3f39b96e0b2e89246a4706daabe001181586005b7f2a8092a",
+        "41a9c9a6251d16b7e3a3c549c9aa48f316f82497061c45e409c9b9f3e63bc8bd",
+        "aa837c809f1ea9a0a56f2772fb407be7a8112893b18bbf314650dc20f2fed876",
+        "dfcd5b77cbde28f9018b04668abba5658a9b523904af2bbd9f71c77e6c997c86",
+        "6d2c66f5b661144138476c77a8eac6d89a9678b432d5dc6eb06a4d36a4374cd2"
+      ],
+      "unbatchable": [],
+      "errors": [],
+      "modelCalls": 2,
+      "durationMs": 52710.55189999999,
+      "score": null,
+      "scoreWithheldReason": "Selected-clause evaluation / incomplete extraction; no complete-document score",
+      "cachePath": ".local/p4/predictions/dropbox-083e7ac4ff2c-selected.json",
+      "accepted": 3,
+      "rejected": 5,
+      "promptTokens": 2187,
+      "generatedTokens": 1999,
+      "generationMs": 51790.636
+    }
+  ]
+}

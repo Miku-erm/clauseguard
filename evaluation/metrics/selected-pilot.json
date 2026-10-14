@@ -1,0 +1,451 @@
+{
+  "at": "2026-10-13T20:53:35.125Z",
+  "status": "PROVISIONAL",
+  "scope": "Selected predeclared reference chunks, not exhaustive contracts",
+  "reviewStatus": "PENDING_HUMAN_REVIEW",
+  "documents": [
+    {
+      "sourceId": "github",
+      "evaluated": true,
+      "provisional": true,
+      "matches": [
+        {
+          "referenceId": "draft-1",
+          "predictionId": "github-p1",
+          "severityAgrees": false
+        }
+      ],
+      "falsePositives": [],
+      "falseNegatives": [],
+      "metrics": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1,
+        "recall": 1,
+        "f1": 1
+      },
+      "severityAgreement": 0,
+      "unscoredPredictions": [
+        "github-p2"
+      ],
+      "extractionCoverage": "PARTIAL",
+      "analysisCoverage": {
+        "analyzed": 4,
+        "total": 254,
+        "ratio": 0.015748031496062992
+      },
+      "durationMs": 18730.2389,
+      "modelCalls": 1,
+      "evidenceValidity": 1
+    },
+    {
+      "sourceId": "discord",
+      "evaluated": true,
+      "provisional": true,
+      "matches": [
+        {
+          "referenceId": "draft-2",
+          "predictionId": "discord-p4",
+          "severityAgrees": false
+        },
+        {
+          "referenceId": "draft-3",
+          "predictionId": "discord-p2",
+          "severityAgrees": false
+        }
+      ],
+      "falsePositives": [],
+      "falseNegatives": [],
+      "metrics": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1,
+        "recall": 1,
+        "f1": 1
+      },
+      "severityAgreement": 0,
+      "unscoredPredictions": [
+        "discord-p1",
+        "discord-p3"
+      ],
+      "extractionCoverage": "UNKNOWN",
+      "analysisCoverage": {
+        "analyzed": 7,
+        "total": 188,
+        "ratio": 0.03723404255319149
+      },
+      "durationMs": 52402.997800000005,
+      "modelCalls": 2,
+      "evidenceValidity": 0.6666666666666666
+    },
+    {
+      "sourceId": "reddit",
+      "evaluated": true,
+      "provisional": true,
+      "matches": [],
+      "falsePositives": [
+        "reddit-p1",
+        "reddit-p2"
+      ],
+      "falseNegatives": [
+        "draft-8"
+      ],
+      "metrics": {
+        "tp": 0,
+        "fp": 2,
+        "fn": 1,
+        "precision": 0,
+        "recall": 0,
+        "f1": 0
+      },
+      "severityAgreement": null,
+      "unscoredPredictions": [],
+      "extractionCoverage": "UNKNOWN",
+      "analysisCoverage": {
+        "analyzed": 1,
+        "total": 71,
+        "ratio": 0.014084507042253521
+      },
+      "durationMs": 34736.7555,
+      "modelCalls": 1,
+      "evidenceValidity": 0.4
+    },
+    {
+      "sourceId": "spotify",
+      "evaluated": true,
+      "provisional": true,
+      "matches": [
+        {
+          "referenceId": "draft-4",
+          "predictionId": "spotify-p3",
+          "severityAgrees": false
+        }
+      ],
+      "falsePositives": [
+        "spotify-p1"
+      ],
+      "falseNegatives": [
+        "draft-5"
+      ],
+      "metrics": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 1,
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1": 0.5
+      },
+      "severityAgreement": 0,
+      "unscoredPredictions": [
+        "spotify-p2",
+        "spotify-p4",
+        "spotify-p5",
+        "spotify-p6"
+      ],
+      "extractionCoverage": "UNKNOWN",
+      "analysisCoverage": {
+        "analyzed": 4,
+        "total": 170,
+        "ratio": 0.023529411764705882
+      },
+      "durationMs": 61253.82609999999,
+      "modelCalls": 2,
+      "evidenceValidity": 1
+    },
+    {
+      "sourceId": "dropbox",
+      "evaluated": true,
+      "provisional": true,
+      "matches": [],
+      "falsePositives": [
+        "dropbox-p1"
+      ],
+      "falseNegatives": [
+        "draft-6",
+        "draft-7"
+      ],
+      "metrics": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 2,
+        "precision": 0,
+        "recall": 0,
+        "f1": 0
+      },
+      "severityAgreement": null,
+      "unscoredPredictions": [
+        "dropbox-p2"
+      ],
+      "extractionCoverage": "UNKNOWN",
+      "analysisCoverage": {
+        "analyzed": 7,
+        "total": 97,
+        "ratio": 0.07216494845360824
+      },
+      "durationMs": 65165.938799999974,
+      "modelCalls": 2,
+      "evidenceValidity": 0.25
+    }
+  ],
+  "micro": {
+    "tp": 4,
+    "fp": 4,
+    "fn": 4,
+    "precision": 0.5,
+    "recall": 0.5,
+    "f1": 0.5
+  },
+  "macro": {
+    "precision": 0.5,
+    "recall": 0.5,
+    "f1": 0.5
+  },
+  "byCategory": [
+    {
+      "category": "THIRD_PARTY_DATA_SHARING",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+    },
+    {
+      "category": "TRACKING_AND_PROFILING",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+    },
+    {
+      "category": "UNCLEAR_DATA_RETENTION",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+    },
+    {
+      "category": "RESTRICTED_USER_RIGHTS",
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "precision": 0,
+      "recall": null,
+      "f1": 0
+    },
+    {
+      "category": "AUTOMATIC_RENEWAL",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+    },
+    {
+      "category": "DIFFICULT_CANCELLATION_OR_REFUND",
+      "tp": 2,
+      "fp": 0,
+      "fn": 1,
+      "precision": 1,
+      "recall": 0.6666666666666666,
+      "f1": 0.8
+    },
+    {
+      "category": "UNILATERAL_TERMS_CHANGES",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+    },
+    {
+      "category": "LIMITATION_OF_LIABILITY",
+      "tp": 2,
+      "fp": 3,
+      "fn": 3,
+      "precision": 0.4,
+      "recall": 0.4,
+      "f1": 0.4
+    }
+  ],
+  "severityAgreement": 0,
+  "evidenceValidity": 0.5925925925925926,
+  "totalModelCalls": 8,
+  "averageDurationMs": 46457.95141999999,
+  "modelResponseFailures": 0,
+  "invalidJsonCount": 0,
+  "unevaluated": [],
+  "errors": [
+    {
+      "kind": "FN",
+      "document": "reddit",
+      "section": "13. Disclaimers and Limitation of Liability",
+      "category": "LIMITATION_OF_LIABILITY",
+      "expectedReference": "draft-8",
+      "actual": [
+        {
+          "category": "RESTRICTED_USER_RIGHTS",
+          "severity": "MEDIUM"
+        },
+        {
+          "category": "LIMITATION_OF_LIABILITY",
+          "severity": "HIGH"
+        }
+      ],
+      "evidence": {
+        "chunkId": "8c3445c1aff37e75ce865b59a637feed49101a8bdd8525c2766c49da6f0704b5",
+        "start": 0,
+        "end": 2322
+      },
+      "sourceExtracted": true,
+      "chunkAnalyzed": true,
+      "evidenceRejected": true,
+      "failureType": "EVIDENCE_REJECTION",
+      "possibleRootCause": "Inspect private native response and independent clause rationale; missing reference category is not proof of injection."
+    },
+    {
+      "kind": "FP",
+      "document": "reddit",
+      "section": "Reddit User Agreement / Reddit User Agreement if you live in the United States or outside the EEA, United Kingdom, and Switzerland / 13. Disclaimers and Limitation of Liability",
+      "category": "RESTRICTED_USER_RIGHTS",
+      "actualPrediction": "reddit-p1",
+      "expected": "No additional matching reference in this predeclared chunk",
+      "evidence": {
+        "chunkId": "8c3445c1aff37e75ce865b59a637feed49101a8bdd8525c2766c49da6f0704b5",
+        "start": 1566,
+        "end": 1749
+      },
+      "sourceExtracted": true,
+      "chunkAnalyzed": true,
+      "evidenceRejected": false,
+      "failureType": "INCORRECT_INTERPRETATION",
+      "possibleRootCause": "Allocation of technical damage risk is a liability restriction, not an explicit deletion/access/dispute-rights restriction; category differs from the independent reference."
+    },
+    {
+      "kind": "FP",
+      "document": "reddit",
+      "section": "Reddit User Agreement / Reddit User Agreement if you live in the United States or outside the EEA, United Kingdom, and Switzerland / 13. Disclaimers and Limitation of Liability",
+      "category": "LIMITATION_OF_LIABILITY",
+      "actualPrediction": "reddit-p2",
+      "expected": "No additional matching reference in this predeclared chunk",
+      "evidence": {
+        "chunkId": "8c3445c1aff37e75ce865b59a637feed49101a8bdd8525c2766c49da6f0704b5",
+        "start": 1750,
+        "end": 1967
+      },
+      "sourceExtracted": true,
+      "chunkAnalyzed": true,
+      "evidenceRejected": false,
+      "failureType": "INCORRECT_INTERPRETATION",
+      "possibleRootCause": "Interpretation presents a fixed cap irrespective of the claim without retaining statutory rights explicitly preserved in the same source chunk; unqualified cap does not match the qualified reference."
+    },
+    {
+      "kind": "FN",
+      "document": "spotify",
+      "section": "Sorumluluk Sınırlaması",
+      "category": "LIMITATION_OF_LIABILITY",
+      "expectedReference": "draft-5",
+      "actual": [
+        {
+          "category": "LIMITATION_OF_LIABILITY",
+          "severity": "HIGH"
+        }
+      ],
+      "evidence": {
+        "chunkId": "11ff8fd0e81e2a8e407fd164eb1bd150986dab25a1028cd946ff1da21d3daeed",
+        "start": 0,
+        "end": 928
+      },
+      "sourceExtracted": true,
+      "chunkAnalyzed": true,
+      "evidenceRejected": false,
+      "failureType": "MODEL_SEMANTIC_FAILURE",
+      "possibleRootCause": "Inspect private native response and independent clause rationale; missing reference category is not proof of injection."
+    },
+    {
+      "kind": "FP",
+      "document": "spotify",
+      "section": "2. Tarafımızca Sunulan Spotify Hizmeti / 6. Sorunlar ve Anlaşmazlıklar / Sorumluluk Sınırlaması ve İddianın Gönderim Süresi",
+      "category": "LIMITATION_OF_LIABILITY",
+      "actualPrediction": "spotify-p1",
+      "expected": "No additional matching reference in this predeclared chunk",
+      "evidence": {
+        "chunkId": "11ff8fd0e81e2a8e407fd164eb1bd150986dab25a1028cd946ff1da21d3daeed",
+        "start": 0,
+        "end": 827
+      },
+      "sourceExtracted": true,
+      "chunkAnalyzed": true,
+      "evidenceRejected": false,
+      "failureType": "INCORRECT_INTERPRETATION",
+      "possibleRootCause": "Explanation says completely excludes all damage types; adjacent source paragraph preserves fraud, personal injury and mandatory liability. The universal interpretation contradicts that qualification."
+    },
+    {
+      "kind": "FN",
+      "document": "dropbox",
+      "section": "Paid Accounts / Cancellation",
+      "category": "DIFFICULT_CANCELLATION_OR_REFUND",
+      "expectedReference": "draft-6",
+      "actual": [],
+      "evidence": {
+        "chunkId": "588f0023e841a9c3f39b96e0b2e89246a4706daabe001181586005b7f2a8092a",
+        "start": 0,
+        "end": 322
+      },
+      "sourceExtracted": true,
+      "chunkAnalyzed": true,
+      "evidenceRejected": true,
+      "failureType": "EVIDENCE_REJECTION",
+      "possibleRootCause": "Inspect private native response and independent clause rationale; missing reference category is not proof of injection."
+    },
+    {
+      "kind": "FN",
+      "document": "dropbox",
+      "section": "Limitation of Liability",
+      "category": "LIMITATION_OF_LIABILITY",
+      "expectedReference": "draft-7",
+      "actual": [
+        {
+          "category": "LIMITATION_OF_LIABILITY",
+          "severity": "HIGH"
+        }
+      ],
+      "evidence": {
+        "chunkId": "dfcd5b77cbde28f9018b04668abba5658a9b523904af2bbd9f71c77e6c997c86",
+        "start": 0,
+        "end": 310
+      },
+      "sourceExtracted": true,
+      "chunkAnalyzed": true,
+      "evidenceRejected": false,
+      "failureType": "MODEL_SEMANTIC_FAILURE",
+      "possibleRootCause": "Inspect private native response and independent clause rationale; missing reference category is not proof of injection."
+    },
+    {
+      "kind": "FP",
+      "document": "dropbox",
+      "section": "",
+      "category": "LIMITATION_OF_LIABILITY",
+      "actualPrediction": "dropbox-p1",
+      "expected": "No additional matching reference in this predeclared chunk",
+      "evidence": {
+        "chunkId": "dfcd5b77cbde28f9018b04668abba5658a9b523904af2bbd9f71c77e6c997c86",
+        "start": 93,
+        "end": 228
+      },
+      "sourceExtracted": true,
+      "chunkAnalyzed": true,
+      "evidenceRejected": false,
+      "failureType": "INCORRECT_INTERPRETATION",
+      "possibleRootCause": "Explanation asserts Dropbox never pays above the cap even for greater loss; quoted fragment omits explicit nonwaivable-law/EU carve-outs. This universal statement is unsupported."
+    }
+  ]
+}

@@ -1,0 +1,417 @@
+{
+  "version": "P4.1-review-v1",
+  "baselineGoldSha256": "5bd3a2c09c9a6eb0145faf9ae7252792554e80f029409e59003cd8395bbc739e",
+  "humanVerifiedCount": 0,
+  "status": "PROVISIONAL",
+  "candidates": [
+    {
+      "id": "draft-1",
+      "sourceId": "github",
+      "documentId": "ec663a5163bd99628f5d06adc27f963fde767eff706fccce66d7dff996a24393",
+      "documentHash": "88f85845caf52f3f0c5b2ca7862589cd78f35256e0115a281d7547854660b271",
+      "category": "DIFFICULT_CANCELLATION_OR_REFUND",
+      "chunkId": "c2c8a56ae48615771aca822d32a63418ccf8af5cf2362b8957e59440c164c7aa",
+      "start": 0,
+      "end": 440,
+      "severity": "MEDIUM",
+      "section": "Billing Schedule; No Refunds",
+      "rationale": "Advance-paid unused months are non-refundable, although paid service continues.",
+      "status": "PENDING_HUMAN_REVIEW",
+      "officialUrl": "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service",
+      "quote": "Payment Based on Plan For monthly or yearly payment plans, the Service is billed in advance on a monthly or yearly basis respectively and is non-refundable. There will be no refunds or credits for partial months of service, downgrade refunds, or refunds for months unused with an open Account; however, the service will remain active for the length of the paid billing period. In order to treat everyone equally, no exceptions will be made.",
+      "context": [
+        {
+          "chunkId": "746369de138b74a1e11814a9f7731bc5077f5f45af50655759c5c922846f87bf",
+          "text": "3. Billing Schedule; No Refunds"
+        },
+        {
+          "chunkId": "c2c8a56ae48615771aca822d32a63418ccf8af5cf2362b8957e59440c164c7aa",
+          "text": "Payment Based on Plan For monthly or yearly payment plans, the Service is billed in advance on a monthly or yearly basis respectively and is non-refundable. There will be no refunds or credits for partial months of service, downgrade refunds, or refunds for months unused with an open Account; however, the service will remain active for the length of the paid billing period. In order to treat everyone equally, no exceptions will be made."
+        },
+        {
+          "chunkId": "f135cfb0304250dc10073515cff0784abf95e0f41cd2f5f0df0d733eaef51e3e",
+          "text": "Payment Based on Usage Some Service features are billed based on your usage. A limited quantity of these Service features may be included in your plan for a limited term without additional charge. If you choose to use paid Service features beyond the quantity included in your plan, you pay for those Service features based on your actual usage in the preceding month. Monthly payment for these purchases will be charged on a periodic basis in arrears. See GitHub Additional Product Terms for Details."
+        },
+        {
+          "chunkId": "713feab54b18ac9038b5cf4c16a76f018969b1b810fbcdebf4a016185bc202a3",
+          "text": "Invoicing For invoiced Users, User agrees to pay the fees in full, up front without deduction or setoff of any kind, in U.S. Dollars. User must pay the fees within thirty (30) days of the GitHub invoice date. Amounts payable under this Agreement are non-refundable, except as otherwise provided in this Agreement. If User fails to pay any fees on time, GitHub reserves the right, in addition to taking any other action at law or equity, to (i) charge interest on past due amounts at 1.0% per month or the highest interest rate allowed by law, whichever is less, and to charge all expenses of recovery, and (ii) terminate the applicable order form. User is solely responsible for all taxes, fees, duties and governmental assessments (except for taxes based on GitHub's net income) that are imposed or become due in connection with this Agreement."
+        }
+      ],
+      "uncertainty": "Draft contractual-disadvantage interpretation; jurisdiction and nonwaivable rights may qualify applicability. Not a legal-violation judgment."
+    },
+    {
+      "id": "draft-2",
+      "sourceId": "discord",
+      "documentId": "5e33d591a1e36425d94b08effc8db049f5be71c78927a4b00024f7f97c097189",
+      "documentHash": "d8a787422698ac39949615715a78f06985db7346f4bd77e0c3abe4d344faeec5",
+      "category": "LIMITATION_OF_LIABILITY",
+      "chunkId": "f6301e36f04b885a40fc42cb65312371595c94a04a1db48759ec100e534dc61a",
+      "start": 0,
+      "end": 956,
+      "severity": "MEDIUM",
+      "section": "Limitation of liability",
+      "rationale": "Broad consequential-loss exclusion subject to applicable-law and nonwaivable consumer protections.",
+      "status": "PENDING_HUMAN_REVIEW",
+      "officialUrl": "https://discord.com/terms",
+      "quote": "IN JURISDICTIONS WHERE EXCLUSIONS OR LIMITATIONS OF LIABILITY ARE ALLOWED, NEITHER DISCORD, ITS AFFILIATES, NOR OUR SUPPLIERS INVOLVED IN CREATING, PRODUCING, OR DELIVERING THE SERVICES WILL BE LIABLE, TO THE MAXIMUM EXTENT PERMITTED UNDER APPLICABLE LAW, FOR ANY INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES, OR DAMAGES FOR LOST PROFITS, LOST REVENUES, LOST SAVINGS, LOST BUSINESS OPPORTUNITY, LOSS OF DATA OR GOODWILL, SERVICE INTERRUPTION, COMPUTER DAMAGE OR SYSTEM FAILURE, OR THE COST OF SUBSTITUTE SERVICES OF ANY KIND ARISING OUT OF OR IN CONNECTION WITH THESE TERMS OR FROM THE USE OF OR INABILITY TO USE THE SERVICES, WHETHER BASED ON WARRANTY, CONTRACT, STATUTE, TORT (INCLUDING NEGLIGENCE), PRODUCT LIABILITY, OR ANY OTHER LEGAL THEORY, AND WHETHER OR NOT DISCORD OR ITS SUPPLIERS HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGE, EVEN IF A LIMITED REMEDY PROVIDED IN THESE TERMS IS FOUND TO HAVE FAILED OF ITS ESSENTIAL PURPOSE.",
+      "context": [
+        {
+          "chunkId": "3232c2fe9652e754df4960d6f0646f294bde8b3e9048f844f4d9948eec269fa6",
+          "text": "THE INFORMATION PRESENTED ON OR THROUGH THE SERVICES IS MADE AVAILABLE SOLELY FOR INFORMATIONAL PURPOSES. WE DO NOT CONFIRM THE ACCURACY, COMPLETENESS, OR USEFULNESS OF THE INFORMATION. ANY RELIANCE YOU PLACE ON SUCH INFORMATION IS SOLELY AT YOUR OWN RISK."
+        },
+        {
+          "chunkId": "f6301e36f04b885a40fc42cb65312371595c94a04a1db48759ec100e534dc61a",
+          "text": "IN JURISDICTIONS WHERE EXCLUSIONS OR LIMITATIONS OF LIABILITY ARE ALLOWED, NEITHER DISCORD, ITS AFFILIATES, NOR OUR SUPPLIERS INVOLVED IN CREATING, PRODUCING, OR DELIVERING THE SERVICES WILL BE LIABLE, TO THE MAXIMUM EXTENT PERMITTED UNDER APPLICABLE LAW, FOR ANY INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES, OR DAMAGES FOR LOST PROFITS, LOST REVENUES, LOST SAVINGS, LOST BUSINESS OPPORTUNITY, LOSS OF DATA OR GOODWILL, SERVICE INTERRUPTION, COMPUTER DAMAGE OR SYSTEM FAILURE, OR THE COST OF SUBSTITUTE SERVICES OF ANY KIND ARISING OUT OF OR IN CONNECTION WITH THESE TERMS OR FROM THE USE OF OR INABILITY TO USE THE SERVICES, WHETHER BASED ON WARRANTY, CONTRACT, STATUTE, TORT (INCLUDING NEGLIGENCE), PRODUCT LIABILITY, OR ANY OTHER LEGAL THEORY, AND WHETHER OR NOT DISCORD OR ITS SUPPLIERS HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGE, EVEN IF A LIMITED REMEDY PROVIDED IN THESE TERMS IS FOUND TO HAVE FAILED OF ITS ESSENTIAL PURPOSE."
+        },
+        {
+          "chunkId": "5042cc1874bf384e52321d476a3fc2a2da9d6cb857b743d9ebbd1ede11e2031f",
+          "text": "BESIDES THE TYPES OF LIABILITY WE CANNOT LIMIT BY LAW (AS DESCRIBED IN THIS SECTION), DISCORD LIMITS OUR LIABILITY TO YOU TO THE GREATER OF (A) THE AMOUNTS YOU HAVE PAID US IN THE THREE MONTHS BEFORE YOU FIRST ASSERT A CLAIM OR (B) $100 USD (OR THE EQUIVALENT IN YOUR LOCAL CURRENCY)."
+        },
+        {
+          "chunkId": "072674722d8d6863e68b735e0fa5fb78001f03733f63502ba248b15ee8cb8fad",
+          "text": "DISCORD ISN’T LIABLE FOR THE CONDUCT OR CONTENT, WHETHER ONLINE OR OFFLINE, OF ANY USER OF OUR SERVICES."
+        }
+      ],
+      "uncertainty": "Draft contractual-disadvantage interpretation; jurisdiction and nonwaivable rights may qualify applicability. Not a legal-violation judgment."
+    },
+    {
+      "id": "draft-3",
+      "sourceId": "discord",
+      "documentId": "5e33d591a1e36425d94b08effc8db049f5be71c78927a4b00024f7f97c097189",
+      "documentHash": "d8a787422698ac39949615715a78f06985db7346f4bd77e0c3abe4d344faeec5",
+      "category": "LIMITATION_OF_LIABILITY",
+      "chunkId": "5042cc1874bf384e52321d476a3fc2a2da9d6cb857b743d9ebbd1ede11e2031f",
+      "start": 0,
+      "end": 284,
+      "severity": "MEDIUM",
+      "section": "Limitation of liability",
+      "rationale": "Three-month payments or $100 cap, expressly excluding liability that cannot legally be limited.",
+      "status": "PENDING_HUMAN_REVIEW",
+      "officialUrl": "https://discord.com/terms",
+      "quote": "BESIDES THE TYPES OF LIABILITY WE CANNOT LIMIT BY LAW (AS DESCRIBED IN THIS SECTION), DISCORD LIMITS OUR LIABILITY TO YOU TO THE GREATER OF (A) THE AMOUNTS YOU HAVE PAID US IN THE THREE MONTHS BEFORE YOU FIRST ASSERT A CLAIM OR (B) $100 USD (OR THE EQUIVALENT IN YOUR LOCAL CURRENCY).",
+      "context": [
+        {
+          "chunkId": "f6301e36f04b885a40fc42cb65312371595c94a04a1db48759ec100e534dc61a",
+          "text": "IN JURISDICTIONS WHERE EXCLUSIONS OR LIMITATIONS OF LIABILITY ARE ALLOWED, NEITHER DISCORD, ITS AFFILIATES, NOR OUR SUPPLIERS INVOLVED IN CREATING, PRODUCING, OR DELIVERING THE SERVICES WILL BE LIABLE, TO THE MAXIMUM EXTENT PERMITTED UNDER APPLICABLE LAW, FOR ANY INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES, OR DAMAGES FOR LOST PROFITS, LOST REVENUES, LOST SAVINGS, LOST BUSINESS OPPORTUNITY, LOSS OF DATA OR GOODWILL, SERVICE INTERRUPTION, COMPUTER DAMAGE OR SYSTEM FAILURE, OR THE COST OF SUBSTITUTE SERVICES OF ANY KIND ARISING OUT OF OR IN CONNECTION WITH THESE TERMS OR FROM THE USE OF OR INABILITY TO USE THE SERVICES, WHETHER BASED ON WARRANTY, CONTRACT, STATUTE, TORT (INCLUDING NEGLIGENCE), PRODUCT LIABILITY, OR ANY OTHER LEGAL THEORY, AND WHETHER OR NOT DISCORD OR ITS SUPPLIERS HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGE, EVEN IF A LIMITED REMEDY PROVIDED IN THESE TERMS IS FOUND TO HAVE FAILED OF ITS ESSENTIAL PURPOSE."
+        },
+        {
+          "chunkId": "5042cc1874bf384e52321d476a3fc2a2da9d6cb857b743d9ebbd1ede11e2031f",
+          "text": "BESIDES THE TYPES OF LIABILITY WE CANNOT LIMIT BY LAW (AS DESCRIBED IN THIS SECTION), DISCORD LIMITS OUR LIABILITY TO YOU TO THE GREATER OF (A) THE AMOUNTS YOU HAVE PAID US IN THE THREE MONTHS BEFORE YOU FIRST ASSERT A CLAIM OR (B) $100 USD (OR THE EQUIVALENT IN YOUR LOCAL CURRENCY)."
+        },
+        {
+          "chunkId": "072674722d8d6863e68b735e0fa5fb78001f03733f63502ba248b15ee8cb8fad",
+          "text": "DISCORD ISN’T LIABLE FOR THE CONDUCT OR CONTENT, WHETHER ONLINE OR OFFLINE, OF ANY USER OF OUR SERVICES."
+        },
+        {
+          "chunkId": "0660e63641736d850ed043ce905205c9256dee124e7c9c6554d589395a44bea7",
+          "text": "THE EXCLUSIONS AND LIMITATIONS OF DAMAGES SET FORTH ABOVE ARE FUNDAMENTAL ELEMENTS OF THE BASIS OF THE BARGAIN BETWEEN DISCORD AND YOU. THE LIMITATION OF LIABILITY DESCRIBED ABOVE SHALL APPLY FULLY TO RESIDENTS OF NEW JERSEY."
+        }
+      ],
+      "uncertainty": "Draft contractual-disadvantage interpretation; jurisdiction and nonwaivable rights may qualify applicability. Not a legal-violation judgment."
+    },
+    {
+      "id": "draft-4",
+      "sourceId": "spotify",
+      "documentId": "278c3ff4f7fdf0abaaf917cd7738da10fa884bf6973fdac47d262a354c9a5fd8",
+      "documentHash": "401d734db094bd386eeae685f497ccff9dfd663d78ce5c67a1f7335f2cc1f100",
+      "category": "DIFFICULT_CANCELLATION_OR_REFUND",
+      "chunkId": "4ce6d00cbebc7c7568d95586b30b1bb0731ffd01a9fd6d2d7519e1135caeecb6",
+      "start": 0,
+      "end": 426,
+      "severity": "LOW",
+      "section": "Ödemeler ve iptal",
+      "rationale": "No partial-period refunds, qualified by exceptions elsewhere and anytime cancellation.",
+      "status": "PENDING_HUMAN_REVIEW",
+      "officialUrl": "https://www.spotify.com/tr-tr/legal/end-user-agreement/",
+      "quote": "Ücretli Aboneliğinizi, Spotify hesabınızda oturum açıp Hesap sayfasındaki yönergeleri izleyerek veya bu bağlantıya tıklayıp talimatları uygulayarak istediğiniz zaman iptal edebilirsiniz. Aksi belirtilmedikçe iptal işlemi iptal ettiğiniz fatura döneminin sonunda geçerli olur ve Spotify Hizmeti'nin ücretsiz sürümüne düşürülürsünüz. Bu Şartlar'da aksi belirtilmediği sürece kısmi üyelik dönemleri için iade veya kredi sunmayız.",
+      "context": [
+        {
+          "chunkId": "6151e09f0a79be58cbd794b481534739d2bbd1e543e12e228412b8a6d53b3dfd",
+          "text": "Aksi belirtilmedikçe (örneğin, Ön Ödemeli Süre için kaydolduysanız) Ücretli Abonelikler iptal edilene kadar süresiz olarak devam eder. Her faturalandırma döneminin ilk gününde tekrar faturalandırılırsınız; ilgili ödemeyi yapar ve o sırada geçerli olan abonelik ücretini ödeme yönteminizden tahsil etmemiz için bize (veya bir üçüncü taraf aracılığıyla kaydolursanız geçerli üçüncü tarafa) yetki verirsiniz."
+        },
+        {
+          "chunkId": "4ce6d00cbebc7c7568d95586b30b1bb0731ffd01a9fd6d2d7519e1135caeecb6",
+          "text": "Ücretli Aboneliğinizi, Spotify hesabınızda oturum açıp Hesap sayfasındaki yönergeleri izleyerek veya bu bağlantıya tıklayıp talimatları uygulayarak istediğiniz zaman iptal edebilirsiniz. Aksi belirtilmedikçe iptal işlemi iptal ettiğiniz fatura döneminin sonunda geçerli olur ve Spotify Hizmeti'nin ücretsiz sürümüne düşürülürsünüz. Bu Şartlar'da aksi belirtilmediği sürece kısmi üyelik dönemleri için iade veya kredi sunmayız."
+        },
+        {
+          "chunkId": "c56ed98661d840dc5baead9d7ae41a541565084daeb63c33ffccf7674adaf983",
+          "text": "Bir Kod kullanarak Ücretli Abonelik satın aldıysanız aboneliğiniz, Kod'da belirtilen sürenin sonunda ya da Spotify Hizmeti için ödenmesi gereken ön ödeme bakiyesi yetersiz olduğunda aboneliğiniz otomatik olarak sonlandırılır."
+        },
+        {
+          "chunkId": "b6a626e03a03d7f61484371a4231603349d9f0f1ee0d5193dc90e70264b5b76b",
+          "text": "Bu Şartlar kapsamında sahip olduğumuz diğer haklara ilaveten ve bunlardan bağımsız olarak, Ücretli Aboneliği en az 14 gün önceden size bildirerek herhangi bir zamanda sonlandırma hakkını saklı tutarız. Başka türlü bilgi vermediğimiz sürece, Ücretli Aboneliğe erişiminizi geçerli fatura döneminin kalan süresi boyunca sürdürmenize izin veririz. Bunun ardından hesabınızı Spotify Hizmeti'nin ücretsiz sürümüne düşürürüz."
+        }
+      ],
+      "uncertainty": "Draft contractual-disadvantage interpretation; jurisdiction and nonwaivable rights may qualify applicability. Not a legal-violation judgment."
+    },
+    {
+      "id": "draft-5",
+      "sourceId": "spotify",
+      "documentId": "278c3ff4f7fdf0abaaf917cd7738da10fa884bf6973fdac47d262a354c9a5fd8",
+      "documentHash": "401d734db094bd386eeae685f497ccff9dfd663d78ce5c67a1f7335f2cc1f100",
+      "category": "LIMITATION_OF_LIABILITY",
+      "chunkId": "11ff8fd0e81e2a8e407fd164eb1bd150986dab25a1028cd946ff1da21d3daeed",
+      "start": 0,
+      "end": 928,
+      "severity": "MEDIUM",
+      "section": "Sorumluluk Sınırlaması",
+      "rationale": "Broad exclusions and twelve-month payments/$30 cap; adjacent paragraph 109 preserves nonwaivable liability.",
+      "status": "PENDING_HUMAN_REVIEW",
+      "officialUrl": "https://www.spotify.com/tr-tr/legal/end-user-agreement/",
+      "quote": "Spotify, yetkilileri, hissedarları, çalışanları, temsilcileri, yöneticileri, bağlı ortaklıkları, iştirakleri, halefleri, görevlileri, tedarikçileri veya lisans sağlayıcıları hiçbir durumda şunlardan sorumlu olmayacaktır: (1) her türlü dolaylı, özel, arızi, cezai, örnek niteliğindeki veya bağlı zarardan; (2) Spotify Hizmeti'nin, cihazların, üçüncü taraf uygulamalarının veya üçüncü taraf uygulama içeriğinin kullanılmasından veya kullanılamamasından kaynaklanan her durumda kullanım kaybı, veri kaybı, iş veya kâr kaybından (doğrudan veya dolaylı); veya (3) Spotify Hizmeti'ne, üçüncü taraf uygulamalarına veya üçüncü taraf uygulama içeriğine ilişkin tüm iddialar için (a) Spotify'a ilk iddiadan önceki on iki ay içinde ödemiş olduğunuz tutar veya (b) 30,00 $ arasında hangisi daha yüksekse ilgili tutardaki toplam yükümlülük. Maruz kaldığınız zararlara yönelik yükümlülüğümüz, makul olarak öngörülebilir zararlarla sınırlıdır.",
+      "context": [
+        {
+          "chunkId": "34727cc537bd0271558001aededf2d9459d6127fc3e6f4276c0c80df90950b35",
+          "text": "Spotify Hizmeti'nde yaşadığınız herhangi bir sorunda ya da memnuniyetsizlikte tek ve münhasır çözüm yolunuzun tüm Spotify yazılımını kaldırmak ve Spotify Hizmeti'ni kullanmayı durdurmak olduğunu kabul edersiniz. Spotify'ın Spotify Hizmetleri aracılığıyla ya da bu hizmetlerle bağlantılı olarak kullanıma sunulan üçüncü taraf uygulamaları veya içeriklerden kaynaklanan ya da bunlarla bağlantılı hiçbir yükümlülüğü ve sorumluluğu bulunmadığını; ilgili üçüncü taraflarla aranızdaki ilişki söz konusu üçüncü taraflarla aranızdaki ayrı sözleşmelere tabi olsa da Spotify'a ilişkin olarak buradaki üçüncü taraf uygulamalarında ya da içerikte yaşadığınız her türlü sorun veya memnuniyetsizlik için tek ve münhasır çözüm yolunuzun söz konusu üçüncü taraf uygulamalarını kaldırmak ve/veya kullanmayı bırakmak olduğunu kabul edersiniz."
+        },
+        {
+          "chunkId": "11ff8fd0e81e2a8e407fd164eb1bd150986dab25a1028cd946ff1da21d3daeed",
+          "text": "Spotify, yetkilileri, hissedarları, çalışanları, temsilcileri, yöneticileri, bağlı ortaklıkları, iştirakleri, halefleri, görevlileri, tedarikçileri veya lisans sağlayıcıları hiçbir durumda şunlardan sorumlu olmayacaktır: (1) her türlü dolaylı, özel, arızi, cezai, örnek niteliğindeki veya bağlı zarardan; (2) Spotify Hizmeti'nin, cihazların, üçüncü taraf uygulamalarının veya üçüncü taraf uygulama içeriğinin kullanılmasından veya kullanılamamasından kaynaklanan her durumda kullanım kaybı, veri kaybı, iş veya kâr kaybından (doğrudan veya dolaylı); veya (3) Spotify Hizmeti'ne, üçüncü taraf uygulamalarına veya üçüncü taraf uygulama içeriğine ilişkin tüm iddialar için (a) Spotify'a ilk iddiadan önceki on iki ay içinde ödemiş olduğunuz tutar veya (b) 30,00 $ arasında hangisi daha yüksekse ilgili tutardaki toplam yükümlülük. Maruz kaldığınız zararlara yönelik yükümlülüğümüz, makul olarak öngörülebilir zararlarla sınırlıdır."
+        },
+        {
+          "chunkId": "683318f2c568ada63dc89116d455c346d77c7e7cfa94afd57a5d9ebce3fa95f2",
+          "text": "Şüpheye mahal vermemek adına bu Şartlar, geçerli kanunun ilgili sınırlamayı yasakladığı ölçüde Spotify'ın dolandırıcılık, dolandırma amaçlı yanlış beyan, ölüm veya bedensel yaralanmaya ilişkin yükümlülüğünü ya da geçerli kanunlar çerçevesinde sınırlanamaz veya hariç bırakılamaz herhangi bir başka yükümlülüğü sınırlamaz."
+        },
+        {
+          "chunkId": "c146bd852850038ccde9b587ac39ade9718e901a0c054e3d7adc720f274d4091",
+          "text": "Bu tür kısıtlamaların geçerli kanunlar tarafından yasaklandığı durumlar hariç olmak üzere, bu şartlar kapsamındaki tüm iddialar, iddiada bulunan tarafın iddiaya yol açan eylemi, ihmali ya da kusuru ilk öğrendiği ya da makul olarak öğrenmiş olması gereken tarihten itibaren bir (1) yıl içinde (tahkim talebinde bulunarak veya aşağıdaki tahkim anlaşması kapsamında bireysel bir dava açarak) başlatılmalıdır ve bu süre içerisinde belirtilmeyen hiçbir iddia için hiçbir çözüm yolu hakkı bulunmayacaktır."
+        }
+      ],
+      "uncertainty": "Draft contractual-disadvantage interpretation; jurisdiction and nonwaivable rights may qualify applicability. Not a legal-violation judgment."
+    },
+    {
+      "id": "draft-6",
+      "sourceId": "dropbox",
+      "documentId": "16614e62bcb6cdfbcde07fa0311a351ab3157377d6de8e0dfc45f56ae6bfdd8c",
+      "documentHash": "26d95f6839e56300785f89845f1496335e4819c8b0e1392fd15bc9c857d01c23",
+      "category": "DIFFICULT_CANCELLATION_OR_REFUND",
+      "chunkId": "588f0023e841a9c3f39b96e0b2e89246a4706daabe001181586005b7f2a8092a",
+      "start": 0,
+      "end": 322,
+      "severity": "LOW",
+      "section": "Paid Accounts / Cancellation",
+      "rationale": "Refunds limited to those required by law, including explicit EU fourteen-day withdrawal protection; cancellation is available anytime.",
+      "status": "PENDING_HUMAN_REVIEW",
+      "officialUrl": "https://www.dropbox.com/terms",
+      "quote": "Cancellation. You may cancel your Paid Account at any time. Refunds are only issued if required by law. For example, users living in the European Union have the right to cancel their Paid Account subscriptions and obtain a refund within 14 days of signing up for, upgrading to, or renewing a Paid Account by clicking here.",
+      "context": [
+        {
+          "chunkId": "ac47698024eaa70f6e1b47c8bba212bb90f67cfa5120a67289711f60ddc1e982",
+          "text": "Billing. You can increase your storage space and add paid features to your account (turning your account into a “Paid Account”). We’ll automatically bill you from the date you convert to a Paid Account and on each periodic renewal until cancellation. If you’re on an annual plan, we’ll send you a notice email reminding you that your plan is about to renew within a reasonable period of time prior to the renewal date. You’re responsible for all applicable taxes, and we’ll charge tax when required to do so. Some countries have mandatory local laws regarding your cancellation rights, and this paragraph doesn’t override these laws."
+        },
+        {
+          "chunkId": "588f0023e841a9c3f39b96e0b2e89246a4706daabe001181586005b7f2a8092a",
+          "text": "Cancellation. You may cancel your Paid Account at any time. Refunds are only issued if required by law. For example, users living in the European Union have the right to cancel their Paid Account subscriptions and obtain a refund within 14 days of signing up for, upgrading to, or renewing a Paid Account by clicking here."
+        },
+        {
+          "chunkId": "41a9c9a6251d16b7e3a3c549c9aa48f316f82497061c45e409c9b9f3e63bc8bd",
+          "text": "Downgrades. Your Paid Account will remain in effect until it's cancelled or terminated under these Terms. If you’re on a Dropbox Family plan, the Family manager may be able to downgrade your account at any time. If you don’t pay for your Paid Account on time, we reserve the right to suspend it or remove Paid Account features."
+        },
+        {
+          "chunkId": "d46ce00a76d341defc103b49dd84dc604c2268cd3e179d3da023af56a7483d46",
+          "text": "Changes. We may change the fees in effect on renewal of your subscription, to reflect factors such as changes to our product offerings, changes to our business, or changes in economic conditions. We’ll give you no less than 30 days’ advance notice of these changes via a message to the email address associated with your account and you’ll have the opportunity to cancel your subscription before the new fee comes into effect."
+        }
+      ],
+      "uncertainty": "Draft contractual-disadvantage interpretation; jurisdiction and nonwaivable rights may qualify applicability. Not a legal-violation judgment."
+    },
+    {
+      "id": "draft-7",
+      "sourceId": "dropbox",
+      "documentId": "16614e62bcb6cdfbcde07fa0311a351ab3157377d6de8e0dfc45f56ae6bfdd8c",
+      "documentHash": "26d95f6839e56300785f89845f1496335e4819c8b0e1392fd15bc9c857d01c23",
+      "category": "LIMITATION_OF_LIABILITY",
+      "chunkId": "dfcd5b77cbde28f9018b04668abba5658a9b523904af2bbd9f71c77e6c997c86",
+      "start": 0,
+      "end": 310,
+      "severity": "MEDIUM",
+      "section": "Limitation of Liability",
+      "rationale": "Low $20/current plan cap, subject to nonwaivable liability and EU-law carve-out.",
+      "status": "PENDING_HUMAN_REVIEW",
+      "officialUrl": "https://www.dropbox.com/terms",
+      "quote": "OTHER THAN FOR THE TYPES OF LIABILITY WE CANNOT LIMIT BY LAW (AS DESCRIBED IN THIS SECTION), WE LIMIT OUR LIABILITY TO YOU TO THE GREATER OF $20 USD OR 100% OF ANY AMOUNT YOU'VE PAID UNDER YOUR CURRENT SERVICE PLAN WITH DROPBOX. THIS PROVISION DOES NOT APPLY TO EU CONSUMERS WHERE PROHIBITED BY APPLICABLE LAW.",
+      "context": [
+        {
+          "chunkId": "aa837c809f1ea9a0a56f2772fb407be7a8112893b18bbf314650dc20f2fed876",
+          "text": "IF YOU USE THE SERVICES FOR ANY COMMERCIAL, BUSINESS, OR RE-SALE PURPOSE, DROPBOX, ITS AFFILIATES, SUPPLIERS OR DISTRIBUTORS WILL HAVE NO LIABILITY TO YOU FOR ANY LOSS OF PROFIT, LOSS OF BUSINESS, BUSINESS INTERRUPTION, OR LOSS OF BUSINESS OPPORTUNITY. DROPBOX AND ITS AFFILIATES AREN’T RESPONSIBLE FOR THE CONDUCT, WHETHER ONLINE OR OFFLINE, OF ANY USER OF THE SERVICES."
+        },
+        {
+          "chunkId": "dfcd5b77cbde28f9018b04668abba5658a9b523904af2bbd9f71c77e6c997c86",
+          "text": "OTHER THAN FOR THE TYPES OF LIABILITY WE CANNOT LIMIT BY LAW (AS DESCRIBED IN THIS SECTION), WE LIMIT OUR LIABILITY TO YOU TO THE GREATER OF $20 USD OR 100% OF ANY AMOUNT YOU'VE PAID UNDER YOUR CURRENT SERVICE PLAN WITH DROPBOX. THIS PROVISION DOES NOT APPLY TO EU CONSUMERS WHERE PROHIBITED BY APPLICABLE LAW."
+        },
+        {
+          "chunkId": "6d2c66f5b661144138476c77a8eac6d89a9678b432d5dc6eb06a4d36a4374cd2",
+          "text": "Resolving Disputes"
+        },
+        {
+          "chunkId": "8ab4e3f8850e62f1d40a5415eea6f547bffd50c202808153d6d7fc14ac0b744e",
+          "text": "Let’s Try to Sort Things Out First. We want to address your concerns without needing a formal legal case. Before filing a claim against Dropbox, you agree to try to resolve the dispute informally by sending us a written Notice of Dispute at dispute-notice@dropbox.com that includes your name, a detailed description of the dispute, and the relief you seek. We’ll try to resolve the dispute informally by contacting you via email. If a dispute is not resolved within 60 days after submission, you or Dropbox may bring a formal proceeding. If you reside in the EU, the European Commission provides for an online dispute resolution platform, which you can access here: https://ec.europa.eu/consumers/odr."
+        }
+      ],
+      "uncertainty": "Draft contractual-disadvantage interpretation; jurisdiction and nonwaivable rights may qualify applicability. Not a legal-violation judgment."
+    },
+    {
+      "id": "draft-8",
+      "sourceId": "reddit",
+      "documentId": "c04dac908c7b3bf7ad804a9b432504b9170766f41893fb6d2e16205d217afd9d",
+      "documentHash": "a6d182b4aa6bac3bf3c629db787391a217f933d70a2c5664c9c6ed541295b6a9",
+      "category": "LIMITATION_OF_LIABILITY",
+      "chunkId": "8c3445c1aff37e75ce865b59a637feed49101a8bdd8525c2766c49da6f0704b5",
+      "start": 0,
+      "end": 2322,
+      "severity": "MEDIUM",
+      "section": "13. Disclaimers and Limitation of Liability",
+      "rationale": "Broad indirect-loss exclusions and six-month payments or USD100 cap, qualified by statutory protections in the same paragraph.",
+      "status": "PENDING_HUMAN_REVIEW",
+      "officialUrl": "https://redditinc.com/policies/user-agreement",
+      "quote": "Nothing in these Terms will prejudice the statutory rights that you may have as a user of the Services. Some countries, states, provinces or other jurisdictions do not allow the exclusion of certain warranties or the limitation of liability as stated in this section, so the below terms may not fully apply to you. Instead, in such jurisdictions, the exclusions and limitations below shall apply only to the extent permitted by the laws of such jurisdictions.THE SERVICES ARE PROVIDED “AS IS” AND “AS AVAILABLE” WITHOUT REPRESENTATIONS, WARRANTIES, OR CONDITIONS OF ANY KIND, WHETHER EXPRESS, IMPLIED, LEGAL, OR STATUTORY, INCLUDING IMPLIED WARRANTIES OF MERCHANTABILITY, TITLE, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. THE REDDIT ENTITIES DO NOT WARRANT THAT THE SERVICES ARE ACCURATE, COMPLETE, RELIABLE, CURRENT, OR ERROR FREE. REDDIT DOES NOT CONTROL, ENDORSE, OR TAKE RESPONSIBILITY FOR ANY CONTENT AVAILABLE ON OR LINKED TO THE SERVICES OR THE ACTIONS OF ANY THIRD PARTY OR USER, INCLUDING MODERATORS. WHILE REDDIT ATTEMPTS TO MAKE YOUR ACCESS TO AND USE OF OUR SERVICES SAFE, WE DO NOT REPRESENT OR WARRANT THAT OUR SERVICES OR SERVERS ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS.IN NO EVENT WILL ANY OF THE REDDIT ENTITIES BE LIABLE TO YOU FOR ANY INDIRECT, CONSEQUENTIAL, EXEMPLARY, INCIDENTAL, SPECIAL, OR PUNITIVE DAMAGES, OR LOST PROFITS ARISING FROM OR RELATING TO THESE TERMS OR THE SERVICES, INCLUDING THOSE ARISING FROM OR RELATING TO CONTENT MADE AVAILABLE ON THE SERVICES THAT IS ALLEGED TO BE DEFAMATORY, OFFENSIVE, OR ILLEGAL. ACCESS TO, AND USE OF, THE SERVICES IS AT YOUR OWN DISCRETION AND RISK, AND YOU WILL BE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR DEVICE OR COMPUTER SYSTEM, OR RESULTING LOSS OF DATA. IN NO EVENT WILL THE AGGREGATE LIABILITY OF THE REDDIT ENTITIES EXCEED THE GREATER OF ONE HUNDRED U.S. DOLLARS ($100) OR ANY AMOUNT YOU PAID REDDIT IN THE PREVIOUS SIX MONTHS FOR THE SERVICES GIVING RISE TO THE CLAIM. THE LIMITATIONS OF THIS SECTION WILL APPLY TO ANY THEORY OF LIABILITY, INCLUDING THOSE BASED ON WARRANTY, CONTRACT, STATUTE, TORT, NEGLIGENCE, STRICT LIABILITY, OR OTHERWISE, EVEN IF THE REDDIT ENTITIES HAVE BEEN ADVISED OF THE POSSIBILITY OF ANY SUCH DAMAGE, AND EVEN IF ANY REMEDY SET FORTH IN THESE TERMS IS FOUND TO HAVE FAILED ITS ESSENTIAL PURPOSE.",
+      "context": [
+        {
+          "chunkId": "6c2d5d59c274e66b9044d9756e1b6f61ab317bd75a403b5219f5e8af5a860c80",
+          "text": "13. Disclaimers and Limitation of Liability"
+        },
+        {
+          "chunkId": "8c3445c1aff37e75ce865b59a637feed49101a8bdd8525c2766c49da6f0704b5",
+          "text": "Nothing in these Terms will prejudice the statutory rights that you may have as a user of the Services. Some countries, states, provinces or other jurisdictions do not allow the exclusion of certain warranties or the limitation of liability as stated in this section, so the below terms may not fully apply to you. Instead, in such jurisdictions, the exclusions and limitations below shall apply only to the extent permitted by the laws of such jurisdictions.THE SERVICES ARE PROVIDED “AS IS” AND “AS AVAILABLE” WITHOUT REPRESENTATIONS, WARRANTIES, OR CONDITIONS OF ANY KIND, WHETHER EXPRESS, IMPLIED, LEGAL, OR STATUTORY, INCLUDING IMPLIED WARRANTIES OF MERCHANTABILITY, TITLE, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. THE REDDIT ENTITIES DO NOT WARRANT THAT THE SERVICES ARE ACCURATE, COMPLETE, RELIABLE, CURRENT, OR ERROR FREE. REDDIT DOES NOT CONTROL, ENDORSE, OR TAKE RESPONSIBILITY FOR ANY CONTENT AVAILABLE ON OR LINKED TO THE SERVICES OR THE ACTIONS OF ANY THIRD PARTY OR USER, INCLUDING MODERATORS. WHILE REDDIT ATTEMPTS TO MAKE YOUR ACCESS TO AND USE OF OUR SERVICES SAFE, WE DO NOT REPRESENT OR WARRANT THAT OUR SERVICES OR SERVERS ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS.IN NO EVENT WILL ANY OF THE REDDIT ENTITIES BE LIABLE TO YOU FOR ANY INDIRECT, CONSEQUENTIAL, EXEMPLARY, INCIDENTAL, SPECIAL, OR PUNITIVE DAMAGES, OR LOST PROFITS ARISING FROM OR RELATING TO THESE TERMS OR THE SERVICES, INCLUDING THOSE ARISING FROM OR RELATING TO CONTENT MADE AVAILABLE ON THE SERVICES THAT IS ALLEGED TO BE DEFAMATORY, OFFENSIVE, OR ILLEGAL. ACCESS TO, AND USE OF, THE SERVICES IS AT YOUR OWN DISCRETION AND RISK, AND YOU WILL BE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR DEVICE OR COMPUTER SYSTEM, OR RESULTING LOSS OF DATA. IN NO EVENT WILL THE AGGREGATE LIABILITY OF THE REDDIT ENTITIES EXCEED THE GREATER OF ONE HUNDRED U.S. DOLLARS ($100) OR ANY AMOUNT YOU PAID REDDIT IN THE PREVIOUS SIX MONTHS FOR THE SERVICES GIVING RISE TO THE CLAIM. THE LIMITATIONS OF THIS SECTION WILL APPLY TO ANY THEORY OF LIABILITY, INCLUDING THOSE BASED ON WARRANTY, CONTRACT, STATUTE, TORT, NEGLIGENCE, STRICT LIABILITY, OR OTHERWISE, EVEN IF THE REDDIT ENTITIES HAVE BEEN ADVISED OF THE POSSIBILITY OF ANY SUCH DAMAGE, AND EVEN IF ANY REMEDY SET FORTH IN THESE TERMS IS FOUND TO HAVE FAILED ITS ESSENTIAL PURPOSE."
+        },
+        {
+          "chunkId": "41aec04a6bf6815bb98c80ec671ac96833026ff5d8b9b2ff2a762076c4cd0ce5",
+          "text": "14. Governing Law and Venue"
+        },
+        {
+          "chunkId": "d187546be071f2a2e206e85aa89776d57112654f224611cf61fd81a06609a90c",
+          "text": "We want you to enjoy Reddit, so if you have an issue or dispute, you agree to raise it and try to resolve it with us informally. You can contact us with feedback and concerns here.To the fullest extent permitted by applicable law, any claims you bring arising out of or relating to these Terms or the Services will be governed by the laws of the State of California, without regard to its conflict of laws rules; all disputes related to these Terms or the Services will be brought solely in the federal or state courts located in San Francisco, California, and you and Reddit consent to personal jurisdiction in these courts.If you are a U.S. city, county, or state government entity, then this Section 14 does not apply to you. If you are a U.S. federal government entity, any claims arising out of or relating to these Terms or the Services will be governed by the laws of the United States of America without regard to its conflict of laws rules. To the extent permitted by federal law, the laws of California (other than its conflict of law rules) will apply in the absence of applicable federal law. All disputes related to these Terms or the Services will be brought solely in the federal or state courts located in San Francisco, California."
+        }
+      ],
+      "uncertainty": "Draft contractual-disadvantage interpretation; jurisdiction and nonwaivable rights may qualify applicability. Not a legal-violation judgment."
+    },
+    {
+      "id": "supplemental-1",
+      "sourceId": "github",
+      "documentId": "ec663a5163bd99628f5d06adc27f963fde767eff706fccce66d7dff996a24393",
+      "documentHash": "88f85845caf52f3f0c5b2ca7862589cd78f35256e0115a281d7547854660b271",
+      "category": "LIMITATION_OF_LIABILITY",
+      "severity": "MEDIUM",
+      "kind": "POSITIVE",
+      "chunkId": "cda99ce6727edfb4c939cf2fc01bb6cf2cc5b4189b47efdd6533c9c2a0aa13d6",
+      "start": 0,
+      "end": 238,
+      "quote": "You understand and agree that we will not be liable to you or any third party for any loss of profits, use, goodwill, or data, or for any incidental, indirect, special, consequential or exemplary damages, however arising, that result from",
+      "officialUrl": "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service",
+      "rationale": "Enumerated lost-profit/data and indirect-damage exclusions, with causes listed in subsequent source paragraphs; source reading, not model predictions.",
+      "status": "PENDING_HUMAN_REVIEW",
+      "context": [
+        {
+          "chunkId": "d610b7d26918df876a47e85d2aaeabd0661c06f51c3bb6a0ec6a90da9798ff78",
+          "text": "Short version: We will not be liable for damages or losses arising from your use or inability to use the service or otherwise arising under this agreement. Please read this section carefully; it limits our obligations to you."
+        },
+        {
+          "chunkId": "cda99ce6727edfb4c939cf2fc01bb6cf2cc5b4189b47efdd6533c9c2a0aa13d6",
+          "text": "You understand and agree that we will not be liable to you or any third party for any loss of profits, use, goodwill, or data, or for any incidental, indirect, special, consequential or exemplary damages, however arising, that result from"
+        },
+        {
+          "chunkId": "8f281b516c8946e453edeade63cbdb259d4d44793336201d65f87126228616ed",
+          "text": "the use, disclosure, or display of your User-Generated Content;"
+        },
+        {
+          "chunkId": "4ab6b592afeee3dd587aaa48d57f4a17abe0c35589ad951b1c7e2c9af5f0d51b",
+          "text": "your use or inability to use the Service;"
+        },
+        {
+          "chunkId": "edbec2c1aac97d66ecd212050ae0487f35c148b46c2cef286f242f6614a92ad3",
+          "text": "any modification, price change, suspension or discontinuance of the Service;"
+        },
+        {
+          "chunkId": "ba0a31662911117c7cf7c8ff1a667ec7a58b9ca25a20f227d7a9e4d131700ede",
+          "text": "the Service generally or the software or systems that make the Service available;"
+        }
+      ],
+      "uncertainty": "Supplemental exploratory source-reading draft; excluded from eight-label baseline comparison; not an untouched holdout."
+    },
+    {
+      "id": "supplemental-2",
+      "sourceId": "dropbox",
+      "documentId": "16614e62bcb6cdfbcde07fa0311a351ab3157377d6de8e0dfc45f56ae6bfdd8c",
+      "documentHash": "26d95f6839e56300785f89845f1496335e4819c8b0e1392fd15bc9c857d01c23",
+      "category": "LIMITATION_OF_LIABILITY",
+      "severity": null,
+      "kind": "NEGATIVE",
+      "chunkId": "aba9074957f134a04434ce106af23716072e3df94d2cf99bd80c55c66122a6b1",
+      "start": 0,
+      "end": 868,
+      "quote": "WE DON’T EXCLUDE OR LIMIT OUR LIABILITY TO YOU WHERE IT WOULD BE ILLEGAL TO DO SO—THIS INCLUDES ANY LIABILITY FOR DROPBOX’S OR ITS AFFILIATES’ FRAUD OR FRAUDULENT MISREPRESENTATION IN PROVIDING THE SERVICES. IN COUNTRIES WHERE THE FOLLOWING TYPES OF EXCLUSIONS AREN’T ALLOWED, WE'RE RESPONSIBLE TO YOU ONLY FOR LOSSES AND DAMAGES THAT ARE A REASONABLY FORESEEABLE RESULT OF OUR FAILURE TO USE REASONABLE CARE AND SKILL OR OUR BREACH OF OUR CONTRACT WITH YOU. THIS PARAGRAPH DOESN’T AFFECT CONSUMER RIGHTS THAT CAN'T BE WAIVED OR LIMITED BY ANY CONTRACT OR AGREEMENT. IF YOU ARE AN EU OR UK CONSUMER, THESE TERMS DO NOT EXCLUDE DROPBOX’S LIABILITY FOR LOSSES AND DAMAGES THAT ARE A RESULT OF OUR FAILURE TO USE REASONABLE CARE AND SKILL IN PROVIDING THE SERVICES OR OF OUR BREACH OF OUR CONTRACT WITH YOU, AS LONG AS THOSE LOSSES AND DAMAGES ARE REASONABLY FORESEEABLE.",
+      "officialUrl": "https://www.dropbox.com/terms",
+      "rationale": "Mandatory rights and EU/UK reasonably foreseeable loss protection alone are not affirmative damages exclusions. Later actual caps must be evaluated separately.",
+      "status": "PENDING_HUMAN_REVIEW",
+      "context": [
+        {
+          "chunkId": "667141d14689d7a66ba165a0adc25185ec349c2bcccb3a9e8b61891662597606",
+          "text": "Limitation of Liability"
+        },
+        {
+          "chunkId": "aba9074957f134a04434ce106af23716072e3df94d2cf99bd80c55c66122a6b1",
+          "text": "WE DON’T EXCLUDE OR LIMIT OUR LIABILITY TO YOU WHERE IT WOULD BE ILLEGAL TO DO SO—THIS INCLUDES ANY LIABILITY FOR DROPBOX’S OR ITS AFFILIATES’ FRAUD OR FRAUDULENT MISREPRESENTATION IN PROVIDING THE SERVICES. IN COUNTRIES WHERE THE FOLLOWING TYPES OF EXCLUSIONS AREN’T ALLOWED, WE'RE RESPONSIBLE TO YOU ONLY FOR LOSSES AND DAMAGES THAT ARE A REASONABLY FORESEEABLE RESULT OF OUR FAILURE TO USE REASONABLE CARE AND SKILL OR OUR BREACH OF OUR CONTRACT WITH YOU. THIS PARAGRAPH DOESN’T AFFECT CONSUMER RIGHTS THAT CAN'T BE WAIVED OR LIMITED BY ANY CONTRACT OR AGREEMENT. IF YOU ARE AN EU OR UK CONSUMER, THESE TERMS DO NOT EXCLUDE DROPBOX’S LIABILITY FOR LOSSES AND DAMAGES THAT ARE A RESULT OF OUR FAILURE TO USE REASONABLE CARE AND SKILL IN PROVIDING THE SERVICES OR OF OUR BREACH OF OUR CONTRACT WITH YOU, AS LONG AS THOSE LOSSES AND DAMAGES ARE REASONABLY FORESEEABLE."
+        },
+        {
+          "chunkId": "689c7eb13ffee1d372d56a20bc4380a9f5d7da03a6190292baec175761a2f559",
+          "text": "IN COUNTRIES WHERE EXCLUSIONS OR LIMITATIONS OF LIABILITY ARE ALLOWED, DROPBOX, ITS AFFILIATES, SUPPLIERS OR DISTRIBUTORS WON’T BE LIABLE FOR:"
+        },
+        {
+          "chunkId": "3ccc2370a26340322acd723c253c1487fa06378018f484a61d4dd05b2e18dfb1",
+          "text": "ANY INDIRECT, SPECIAL, INCIDENTAL, PUNITIVE, EXEMPLARY, OR CONSEQUENTIAL DAMAGES, OR"
+        },
+        {
+          "chunkId": "8b63c6e87c699ad9c10efff96f1f2e724dfea08d159a90dcba3c7ac6658b0789",
+          "text": "ANY LOSS OF USE, DATA, BUSINESS, OR PROFITS, REGARDLESS OF LEGAL THEORY."
+        },
+        {
+          "chunkId": "29636f041707db346244e0d6b301fcd012867d29f9950c99e36d1d010051a5a7",
+          "text": "THESE EXCLUSIONS OR LIMITATIONS WILL APPLY REGARDLESS OF WHETHER OR NOT DROPBOX OR ANY OF ITS AFFILIATES HAS BEEN WARNED OF THE POSSIBILITY OF SUCH DAMAGES."
+        }
+      ],
+      "uncertainty": "Supplemental exploratory source-reading draft; excluded from eight-label baseline comparison; not an untouched holdout."
+    },
+    {
+      "id": "supplemental-3",
+      "sourceId": "discord",
+      "documentId": "5e33d591a1e36425d94b08effc8db049f5be71c78927a4b00024f7f97c097189",
+      "documentHash": "d8a787422698ac39949615715a78f06985db7346f4bd77e0c3abe4d344faeec5",
+      "category": "LIMITATION_OF_LIABILITY",
+      "severity": null,
+      "kind": "NEGATIVE",
+      "chunkId": "b1f817957d59bcea6ce2ba3a0957e50447f7e371163c3ba0415a54b0ce973c2e",
+      "start": 0,
+      "end": 450,
+      "quote": "WE DON’T EXCLUDE OR LIMIT OUR LIABILITY TO YOU WHERE IT WOULD BE ILLEGAL TO DO SO. IN JURISDICTIONS WHERE THE BELOW TYPES OF EXCLUSIONS AREN’T ALLOWED, WE’RE RESPONSIBLE TO YOU ONLY FOR LOSSES AND DAMAGES THAT ARE A REASONABLY FORESEEABLE RESULT OF OUR FAILURE TO USE REASONABLE CARE AND SKILL OR OUR MATERIAL BREACH OF OUR CONTRACT WITH YOU. THIS PARAGRAPH DOESN’T AFFECT CONSUMER RIGHTS THAT CAN’T BE WAIVED OR LIMITED BY ANY CONTRACT OR AGREEMENT.",
+      "officialUrl": "https://discord.com/terms",
+      "rationale": "Mandatory rights preservation and ordinary reasonable-care foreseeability clause alone do not establish a damages cap.",
+      "status": "PENDING_HUMAN_REVIEW",
+      "context": [
+        {
+          "chunkId": "f17b87163e9d6145c753702424beadd4c8dbba979c75da732f817b8ac842d06c",
+          "text": "Limitation of liability"
+        },
+        {
+          "chunkId": "b1f817957d59bcea6ce2ba3a0957e50447f7e371163c3ba0415a54b0ce973c2e",
+          "text": "WE DON’T EXCLUDE OR LIMIT OUR LIABILITY TO YOU WHERE IT WOULD BE ILLEGAL TO DO SO. IN JURISDICTIONS WHERE THE BELOW TYPES OF EXCLUSIONS AREN’T ALLOWED, WE’RE RESPONSIBLE TO YOU ONLY FOR LOSSES AND DAMAGES THAT ARE A REASONABLY FORESEEABLE RESULT OF OUR FAILURE TO USE REASONABLE CARE AND SKILL OR OUR MATERIAL BREACH OF OUR CONTRACT WITH YOU. THIS PARAGRAPH DOESN’T AFFECT CONSUMER RIGHTS THAT CAN’T BE WAIVED OR LIMITED BY ANY CONTRACT OR AGREEMENT."
+        },
+        {
+          "chunkId": "3232c2fe9652e754df4960d6f0646f294bde8b3e9048f844f4d9948eec269fa6",
+          "text": "THE INFORMATION PRESENTED ON OR THROUGH THE SERVICES IS MADE AVAILABLE SOLELY FOR INFORMATIONAL PURPOSES. WE DO NOT CONFIRM THE ACCURACY, COMPLETENESS, OR USEFULNESS OF THE INFORMATION. ANY RELIANCE YOU PLACE ON SUCH INFORMATION IS SOLELY AT YOUR OWN RISK."
+        },
+        {
+          "chunkId": "f6301e36f04b885a40fc42cb65312371595c94a04a1db48759ec100e534dc61a",
+          "text": "IN JURISDICTIONS WHERE EXCLUSIONS OR LIMITATIONS OF LIABILITY ARE ALLOWED, NEITHER DISCORD, ITS AFFILIATES, NOR OUR SUPPLIERS INVOLVED IN CREATING, PRODUCING, OR DELIVERING THE SERVICES WILL BE LIABLE, TO THE MAXIMUM EXTENT PERMITTED UNDER APPLICABLE LAW, FOR ANY INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES, OR DAMAGES FOR LOST PROFITS, LOST REVENUES, LOST SAVINGS, LOST BUSINESS OPPORTUNITY, LOSS OF DATA OR GOODWILL, SERVICE INTERRUPTION, COMPUTER DAMAGE OR SYSTEM FAILURE, OR THE COST OF SUBSTITUTE SERVICES OF ANY KIND ARISING OUT OF OR IN CONNECTION WITH THESE TERMS OR FROM THE USE OF OR INABILITY TO USE THE SERVICES, WHETHER BASED ON WARRANTY, CONTRACT, STATUTE, TORT (INCLUDING NEGLIGENCE), PRODUCT LIABILITY, OR ANY OTHER LEGAL THEORY, AND WHETHER OR NOT DISCORD OR ITS SUPPLIERS HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGE, EVEN IF A LIMITED REMEDY PROVIDED IN THESE TERMS IS FOUND TO HAVE FAILED OF ITS ESSENTIAL PURPOSE."
+        },
+        {
+          "chunkId": "5042cc1874bf384e52321d476a3fc2a2da9d6cb857b743d9ebbd1ede11e2031f",
+          "text": "BESIDES THE TYPES OF LIABILITY WE CANNOT LIMIT BY LAW (AS DESCRIBED IN THIS SECTION), DISCORD LIMITS OUR LIABILITY TO YOU TO THE GREATER OF (A) THE AMOUNTS YOU HAVE PAID US IN THE THREE MONTHS BEFORE YOU FIRST ASSERT A CLAIM OR (B) $100 USD (OR THE EQUIVALENT IN YOUR LOCAL CURRENCY)."
+        },
+        {
+          "chunkId": "072674722d8d6863e68b735e0fa5fb78001f03733f63502ba248b15ee8cb8fad",
+          "text": "DISCORD ISN’T LIABLE FOR THE CONDUCT OR CONTENT, WHETHER ONLINE OR OFFLINE, OF ANY USER OF OUR SERVICES."
+        }
+      ],
+      "uncertainty": "Supplemental exploratory source-reading draft; excluded from eight-label baseline comparison; not an untouched holdout."
+    }
+  ]
+}

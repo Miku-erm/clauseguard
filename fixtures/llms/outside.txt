@@ -1,0 +1,4 @@
+# Scope test
+## Policies
+- [Privacy Policy](https://unrelated.invalid/privacy)
+- [Subscription Terms](/demo/risk.html)

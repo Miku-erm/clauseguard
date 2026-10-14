@@ -1,0 +1,24 @@
+[
+  {
+    "at": "2026-10-13T20:44:22.705Z",
+    "action": "Independent preprediction draft frozen",
+    "humanReviewed": false,
+    "sha256": "07dfe3000d23792c4e691ae5c63c768b8c6245644849a7d11a0d7830f680b68f"
+  },
+  {
+    "at": "2026-10-13T20:44:36.969Z",
+    "action": "Add separately read US Reddit liability clause before any real predictions",
+    "humanReviewed": false,
+    "sha256": "5bd3a2c09c9a6eb0145faf9ae7252792554e80f029409e59003cd8395bbc739e"
+  },
+  {
+    "at": "2026-10-13T20:53:27.588Z",
+    "action": "Postprediction independent semantic review, reference draft unchanged; provisional assistant judgment only",
+    "humanReviewed": false
+  },
+  {
+    "at": "2026-10-13T22:32:56.321Z",
+    "action": "Review full-source predictions against unchanged frozen references; distinguish qualification contradictions and different claims within the same chunk; human review still pending",
+    "humanReviewed": false
+  }
+]

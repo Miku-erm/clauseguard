@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "at": "2026-10-14T09:04:38.857Z",
+  "quote": "We retain personal data indefinitely after account closure, without any deletion right.",
+  "supported": [
+    "UNCLEAR_DATA_RETENTION",
+    "RESTRICTED_USER_RIGHTS"
+  ],
+  "rationale": "Indefinite post-closure storage and an express denial of any deletion right are two distinct disadvantages under the unchanged category definitions. Neither is inferred from omitted text.",
+  "previousAssertion": "Only UNCLEAR_DATA_RETENTION; retained before-correction source and real failed result.",
+  "previousScriptSha256": "22967d9f1318d72ebc52e913cf037061e45d5c6ae45e0bebc4d4337cd371a535",
+  "reviewStatus": "PENDING_HUMAN_REVIEW",
+  "referenceDataset": "Original real-document eight-label gold unchanged"
+}

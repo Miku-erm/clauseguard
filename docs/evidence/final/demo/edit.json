@@ -1,0 +1,84 @@
+{
+  "at": "2026-10-14T10:48:41.385Z",
+  "raw": "C:\\Users\\Emre\\Desktop\\nurettin\\Challenge3\\demo\\raw\\demo.cy.mjs.mp4",
+  "rawSha256": "e4c79b0ad915c7a2fa2a3fc6ffc8b930d027d45c0c0f8bc355bb6b8f45299375",
+  "rawDuration": 83.84,
+  "final": "demo/clauseguard-demo.mp4",
+  "finalSha256": "f6a5e4a925c7cf60efe101d1ba5e05878ef6446e84b2fec8712b4e8db5c30108",
+  "source": "Actual passing Cypress recording, no mocked reports/inference",
+  "estimatedOutputDuration": 80,
+  "segments": [
+    {
+      "sourceStart": 0,
+      "sourceEnd": 4.55,
+      "speed": 1,
+      "processing": false,
+      "outputStart": 0,
+      "outputEnd": 4.55
+    },
+    {
+      "sourceStart": 4.55,
+      "sourceEnd": 14.283,
+      "speed": 1.0879302053994642,
+      "processing": true,
+      "outputStart": 4.55,
+      "outputEnd": 13.49634596198775
+    },
+    {
+      "sourceStart": 14.283,
+      "sourceEnd": 16.802,
+      "speed": 1,
+      "processing": false,
+      "outputStart": 13.49634596198775,
+      "outputEnd": 16.015345961987748
+    },
+    {
+      "sourceStart": 16.802,
+      "sourceEnd": 46.056,
+      "speed": 1.0879302053994642,
+      "processing": true,
+      "outputStart": 16.015345961987748,
+      "outputEnd": 42.90493856159625
+    },
+    {
+      "sourceStart": 46.056,
+      "sourceEnd": 64.588,
+      "speed": 1,
+      "processing": false,
+      "outputStart": 42.90493856159625,
+      "outputEnd": 61.43693856159625
+    },
+    {
+      "sourceStart": 64.588,
+      "sourceEnd": 64.792,
+      "speed": 1.0879302053994642,
+      "processing": true,
+      "outputStart": 61.43693856159625,
+      "outputEnd": 61.624450590389586
+    },
+    {
+      "sourceStart": 64.792,
+      "sourceEnd": 64.8,
+      "speed": 1,
+      "processing": false,
+      "outputStart": 61.624450590389586,
+      "outputEnd": 61.63245059038958
+    },
+    {
+      "sourceStart": 64.8,
+      "sourceEnd": 73.12,
+      "speed": 1.0879302053994642,
+      "processing": true,
+      "outputStart": 61.63245059038958,
+      "outputEnd": 69.28
+    },
+    {
+      "sourceStart": 73.12,
+      "sourceEnd": 83.84,
+      "speed": 1,
+      "processing": false,
+      "outputStart": 69.28,
+      "outputEnd": 80
+    }
+  ]
+}

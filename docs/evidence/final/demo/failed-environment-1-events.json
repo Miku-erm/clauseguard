@@ -1,0 +1,41 @@
+{
+  "started": 1791973962226,
+  "events": [
+    {
+      "name": "ready",
+      "at": 1791973963262,
+      "relativeMs": 1036
+    },
+    {
+      "name": "scan-start",
+      "at": 1791973966778,
+      "relativeMs": 4552,
+      "source": "http://127.0.0.1:4173/demo/flow.html"
+    },
+    {
+      "name": "ready",
+      "at": 1791974117581,
+      "relativeMs": 155355
+    },
+    {
+      "name": "scan-start",
+      "at": 1791974121096,
+      "relativeMs": 158870,
+      "source": "http://127.0.0.1:4173/demo/incomplete-flow.html"
+    }
+  ],
+  "network": [
+    {
+      "at": 1791973963243,
+      "url": "http://127.0.0.1:11434/api/tags",
+      "body": null,
+      "worker": "chrome-extension://fdgkmcbkamaabgmhknfogdanihanhenp/background.js"
+    },
+    {
+      "at": 1791974117552,
+      "url": "http://127.0.0.1:11434/api/tags",
+      "body": null,
+      "worker": "chrome-extension://fdgkmcbkamaabgmhknfogdanihanhenp/background.js"
+    }
+  ]
+}

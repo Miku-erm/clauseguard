@@ -1,0 +1,15 @@
+# P2 evidence validation
+
+All model output is untrusted. Strict JSON validates its shape, not truth. The orchestrator snapshots the P1 document and verifies count/order/unique IDs, every original text hash, block reconstruction against the document content hash, and the document ID derived from URL/type/version. Changed or inconsistent documents fail before inference.
+
+For each proposed finding the validator checks the expected document hash, source chunk existence, membership in this exact analysis batch, source text hash, and an **exact case/whitespace-sensitive original substring**. It does not translate quotes, apply fuzzy matching, remove negation or repair fabricated evidence. Quotes produced against normalized analysis text can fail; the prompt supplies original text and asks for an exact original quote.
+
+TypeScript calculates UTF-16 offsets (the browser's string/Range convention), records all overlapping occurrences and chooses the first as the canonical start/end. Findings retain original quote, separate Turkish explanation/reason, chunk/hash/document version, and the P1 structural selector/text-node locator. Repeated identical quotations in one chunk are recorded as multiple occurrences, not silently assigned a unique location. Source locations must be reconstructed and rehashed before future highlighting; selectors alone are not permanent identifiers.
+
+Rejection reasons: UNKNOWN_CHUNK, OUTSIDE_BATCH, QUOTE_MISMATCH, VERSION_MISMATCH, INTEGRITY_FAILURE, CATEGORY_CONTEXT_MISMATCH. The last is a limited conservative relevance check: a data-retention proposal requires explicit storage and data wording in the cited original chunk. Consent/refund/cancellation text alone cannot prove indefinite storage by omission. This is not a universal semantic classifier; unusual wording can be rejected and misleading quotations with apparently relevant vocabulary can still pass. Every rejected proposal remains auditable and contributes nothing to scoring; any rejection withholds a complete-document score.
+
+Deduplication keys use document version, chunk ID, category and exact quote. Duplicate overlap proposals consolidate deterministically to the highest allowed severity; ties use a stable textual order. Different chunks or different quotations remain distinct findings, preserving separate clauses and source occurrences. Regardless of the number of findings, scoring uses only the maximum contribution in each category.
+
+Unresolved issues have no fabricated quotation and never contribute to scoring. Their supplied chunk ID must belong to the current batch. A quote match is not proof of legal correctness, illegality or a KVKK violation; controlled semantic evaluation is recorded separately. Native test failures show why this distinction matters.
+
+Tests exercise exact/missing/invented quotations, wrong document versions, unknown/out-of-batch sources, mutated text, repeated occurrences, distinct duplicate paragraphs, overlap duplication and retention context mismatch. Browser integration additionally changes a real source during inference and verifies score withholding.

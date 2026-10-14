@@ -1,0 +1,71 @@
+{
+  "at": "2026-10-14T11:14:36.354Z",
+  "actualHttpFetch": true,
+  "results": [
+    {
+      "scenario": "valid",
+      "result": {
+        "status": "FOUND",
+        "resourceUrl": "http://127.0.0.1:4173/llms.txt",
+        "links": [
+          {
+            "label": "Subscription Terms",
+            "url": "http://127.0.0.1:4173/demo/risk.html"
+          }
+        ],
+        "rejectedLinks": 0
+      },
+      "pass": true
+    },
+    {
+      "scenario": "missing",
+      "result": {
+        "status": "MISSING",
+        "resourceUrl": "http://127.0.0.1:4173/llms.txt",
+        "links": [],
+        "rejectedLinks": 0
+      },
+      "pass": true
+    },
+    {
+      "scenario": "malformed",
+      "result": {
+        "status": "INVALID",
+        "resourceUrl": "http://127.0.0.1:4173/llms.txt",
+        "links": [],
+        "rejectedLinks": 0
+      },
+      "pass": true
+    },
+    {
+      "scenario": "malicious",
+      "result": {
+        "status": "FOUND",
+        "resourceUrl": "http://127.0.0.1:4173/llms.txt",
+        "links": [
+          {
+            "label": "Subscription Terms",
+            "url": "http://127.0.0.1:4173/demo/risk.html"
+          }
+        ],
+        "rejectedLinks": 0
+      },
+      "pass": true
+    },
+    {
+      "scenario": "outside",
+      "result": {
+        "status": "FOUND",
+        "resourceUrl": "http://127.0.0.1:4173/llms.txt",
+        "links": [
+          {
+            "label": "Subscription Terms",
+            "url": "http://127.0.0.1:4173/demo/risk.html"
+          }
+        ],
+        "rejectedLinks": 1
+      },
+      "pass": true
+    }
+  ]
+}

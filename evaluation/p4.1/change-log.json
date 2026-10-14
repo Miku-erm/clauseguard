@@ -1,0 +1,39 @@
+{
+  "phase": "P4.1",
+  "baseline": "BASELINE_P4",
+  "candidate": "CANDIDATE_P4_1",
+  "final": "FINAL_P4_1",
+  "referenceDataset": "Original eight-label P4 gold; unchanged SHA pinned in source-manifest.json",
+  "supplemental": "Nine positive / two negative review candidates overall; supplemental three excluded from comparison",
+  "humanVerified": 0,
+  "status": "PROVISIONAL",
+  "changes": [
+    "risk prompt and two category guidance strings (no IDs/weights changed)",
+    "At most two new source chunks; adaptive 1536/2048/3072 response reservation at 8192, explicit completion-limit rejection",
+    "one-to-one NBSP restoration with literal repeat metadata",
+    "versioned source-based P3 browser expectation",
+    "versioned evaluation paths and source/cache provenance",
+    "tests and documentation"
+  ],
+  "failedExperiments": [
+    "V1 cap miss and reduced input coverage",
+    "V2 one unbatchable Reddit paragraph",
+    "V3/V4 cap miss",
+    "V5 retention regression",
+    "V6 selected pilot 75% F1 but safe document misrouted uncertainty in actual browser",
+    "Compact no-summary prompt: two original injection attempts included rejected proposals and renewal became unnecessary uncertainty",
+    "Restored baseline instructions: ambiguous retention became a false positive",
+    "Scoped instructions: explicit bounded retention still generated unnecessary unresolved issues",
+    "Initial bounded-retention compact candidate: cap misses; the second supported deletion-right category was incorrectly excluded by the development assertion. Independently versioned source adjudication corrects that assertion; original script/result preserved."
+  ],
+  "holdout": "None claimed; existing corpus/development cases already exposed",
+  "model": "qwen3.5:9b-q4_K_M",
+  "runtime": "Ollama 0.40.0",
+  "context": 8192,
+  "currentCandidate": "Compact scoped ambiguity prompt with bounded deletion exceptions and qualified-cap guidance; all input chunks budgeted at 8192; final fresh tests pending",
+  "at": "2026-10-14T09:00:54.171Z",
+  "adjudications": [
+    "renewal-adjudication.json",
+    "retention-adjudication.json"
+  ]
+}

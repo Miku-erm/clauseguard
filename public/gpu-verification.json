@@ -1,0 +1,11 @@
+{
+  "measuredAt": "2026-10-09T17:24:55.228Z",
+  "model": "qwen3.5:9b-q4_K_M",
+  "context": 8192,
+  "status": "PASS",
+  "residency": "NAME                 ID              SIZE      PROCESSOR    CONTEXT    RUNNER      UNTIL              \nqwen3.5:9b-q4_K_M    56671c2ab938    5.6 GB    100% GPU     8192       llamacpp    9 minutes from now",
+  "peakGpuUtilizationPercent": 100,
+  "peakVramMiB": 7042,
+  "evidence": "docs/evidence/p0.1-gpu-8192/gpu-benchmarks.json",
+  "note": "Historical host measurements; browser cannot read GPU statistics. Rerun diagnostics when configuration changes."
+}

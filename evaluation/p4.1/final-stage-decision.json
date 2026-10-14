@@ -1,0 +1,10 @@
+{
+  "at": "2026-10-14T09:12:18.821Z",
+  "candidatePromptHash": "8ee3e83e00ecf4b3d9f8f0176ca9380a8300094e703b2b378bdf8bae64d5ace6",
+  "status": "BLOCKED",
+  "stageD": "NOT_STARTED",
+  "reason": "Three wider targeted semantic checks failed; Stage D requires the candidate to pass smaller checks. A fresh selected-batch diagnostic pilot and actual browser/security regressions are retained; no full-run final metrics or performance is fabricated.",
+  "semantic": "docs/evidence/p4.1/final-independent-semantics/summary.json",
+  "targeted": "docs/evidence/p4.1/final-independent-targeted/summary.json",
+  "safe": "docs/evidence/p4.1/final-independent-safe/summary.json"
+}

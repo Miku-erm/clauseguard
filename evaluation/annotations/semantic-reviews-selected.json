@@ -1,0 +1,74 @@
+[
+  {
+    "predictionId": "github-p1",
+    "referenceId": "draft-1",
+    "verdict": "SUPPORTED",
+    "rationale": "Explicit denial of unused-period refunds; explanation also acknowledges service continues through the paid period. Severity is assessed separately.",
+    "reviewer": "Codex direct-reading draft review; NOT human or legal expert verification",
+    "status": "PENDING_HUMAN_REVIEW",
+    "predictionFingerprint": "a5d971fb80cd9f76cb03a96d12470f68cb9c912a67d60173845841125c5856bc"
+  },
+  {
+    "predictionId": "discord-p4",
+    "referenceId": "draft-2",
+    "verdict": "SUPPORTED",
+    "rationale": "Same consequential-loss exclusion; exact quote retains maximum extent permitted by law. No assertion that mandatory rights are eliminated.",
+    "reviewer": "Codex direct-reading draft review; NOT human or legal expert verification",
+    "status": "PENDING_HUMAN_REVIEW",
+    "predictionFingerprint": "cb2e16c340c3960ff596d6f732d183bd96f18c99fc95f1cc6951e24bd2d74ed4"
+  },
+  {
+    "predictionId": "discord-p2",
+    "referenceId": "draft-3",
+    "verdict": "SUPPORTED",
+    "rationale": "Same three-month/$100 cap; explanation explicitly preserves liability that cannot be limited by law.",
+    "reviewer": "Codex direct-reading draft review; NOT human or legal expert verification",
+    "status": "PENDING_HUMAN_REVIEW",
+    "predictionFingerprint": "dcc0fa9ed303ee5c3e101e924cf6d812ef7a5888884ee6d1b38bce74baf8b964"
+  },
+  {
+    "predictionId": "spotify-p3",
+    "referenceId": "draft-4",
+    "verdict": "SUPPORTED",
+    "rationale": "Same no-partial-period-refund disadvantage; quote preserves exception wording. Translation mistakenly refers to the starting rather than canceled billing period, recorded as a secondary wording concern; refund classification remains supported.",
+    "reviewer": "Codex direct-reading draft review; NOT human or legal expert verification",
+    "status": "PENDING_HUMAN_REVIEW",
+    "predictionFingerprint": "4b62ecae2a4cdaee5d252335e148375917e8cfcd9cd7d10800107b6a94fd585e"
+  },
+  {
+    "predictionId": "spotify-p1",
+    "referenceId": "draft-5",
+    "verdict": "CONTRADICTORY",
+    "rationale": "Explanation says completely excludes all damage types; adjacent source paragraph preserves fraud, personal injury and mandatory liability. The universal interpretation contradicts that qualification.",
+    "reviewer": "Codex direct-reading draft review; NOT human or legal expert verification",
+    "status": "PENDING_HUMAN_REVIEW",
+    "predictionFingerprint": "c3ae7752cae256a8aefd275f05fdb40c76105ece91290c819b26617f8ad00ab9"
+  },
+  {
+    "predictionId": "dropbox-p1",
+    "referenceId": "draft-7",
+    "verdict": "CONTRADICTORY",
+    "rationale": "Explanation asserts Dropbox never pays above the cap even for greater loss; quoted fragment omits explicit nonwaivable-law/EU carve-outs. This universal statement is unsupported.",
+    "reviewer": "Codex direct-reading draft review; NOT human or legal expert verification",
+    "status": "PENDING_HUMAN_REVIEW",
+    "predictionFingerprint": "462e799da6ea62163245405519d72222cc01f1b694179cb2cf441ff7b550e696"
+  },
+  {
+    "predictionId": "reddit-p2",
+    "referenceId": "draft-8",
+    "verdict": "CONTRADICTORY",
+    "rationale": "Interpretation presents a fixed cap irrespective of the claim without retaining statutory rights explicitly preserved in the same source chunk; unqualified cap does not match the qualified reference.",
+    "reviewer": "Codex direct-reading draft review; NOT human or legal expert verification",
+    "status": "PENDING_HUMAN_REVIEW",
+    "predictionFingerprint": "b102e5156c3c844bc9a0905da6206f1ad2e3bdb0c2e279aef3b8f1b36ec86032"
+  },
+  {
+    "predictionId": "reddit-p1",
+    "referenceId": "draft-8",
+    "verdict": "CONTRADICTORY",
+    "rationale": "Allocation of technical damage risk is a liability restriction, not an explicit deletion/access/dispute-rights restriction; category differs from the independent reference.",
+    "reviewer": "Codex direct-reading draft review; NOT human or legal expert verification",
+    "status": "PENDING_HUMAN_REVIEW",
+    "predictionFingerprint": "c98971baea91a0ea27dfd55c42474aeb9457c714b12878b6f9187eaaad95e636"
+  }
+]

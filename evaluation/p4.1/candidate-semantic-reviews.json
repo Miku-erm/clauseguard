@@ -1,0 +1,82 @@
+[
+  {
+    "predictionId": "github-p1",
+    "referenceId": "draft-1",
+    "verdict": "SUPPORTED",
+    "rationale": "Exact non-refundable advance-payment clause and paid-period service preservation. Explanation retains the service provision. English instead of Turkish and HIGH instead of draft MEDIUM remain quality limitations.",
+    "predictionFingerprint": "c5415ed630ef909d4a2d0da304be6a08f23fde6782ab5c59bae5ff3023c8f205",
+    "reviewer": "Codex direct-reading draft; NOT human/legal-expert verification",
+    "status": "PENDING_HUMAN_REVIEW",
+    "at": "2026-10-14T09:14:46.532Z"
+  },
+  {
+    "predictionId": "discord-p1",
+    "referenceId": "draft-2",
+    "verdict": "SUPPORTED",
+    "rationale": "Broad consequential-loss exclusion quoted with maximum extent permitted under applicable law. Explanation does not deny that quoted qualification. English and HIGH severity require review.",
+    "predictionFingerprint": "19e1e74cab815080f5d441f0576f78f1cb98f60aacd67ffe1373f57b4ca37f23",
+    "reviewer": "Codex direct-reading draft; NOT human/legal-expert verification",
+    "status": "PENDING_HUMAN_REVIEW",
+    "at": "2026-10-14T09:14:46.532Z"
+  },
+  {
+    "predictionId": "discord-p3",
+    "referenceId": "draft-2",
+    "verdict": "SUPPORTED",
+    "rationale": "Same broad exclusion with statutory qualification in quote and reason; duplicate in this reference chunk is counted by one-to-one matching, not a second TP. Added foreseeability prose is imprecise and needs human review.",
+    "predictionFingerprint": "06105514d4383cf3b09a174bc9f95b6bad8707f233e3ec5016887f5b2efdc195",
+    "reviewer": "Codex direct-reading draft; NOT human/legal-expert verification",
+    "status": "PENDING_HUMAN_REVIEW",
+    "at": "2026-10-14T09:14:46.532Z"
+  },
+  {
+    "predictionId": "reddit-p1",
+    "referenceId": "draft-8",
+    "verdict": "CONTRADICTORY",
+    "rationale": "Quote is literal, but explanation treats user responsibility for all device/data damage as absolute. The same original paragraph preserves statutory rights and jurisdictional exceptions; neither quote nor explanation retains them. This cannot receive a semantic TP merely from exact span overlap.",
+    "predictionFingerprint": "eb0625f7f17c04c047283664889c1404cbbebc760871cd04bcfa32ae533f3530",
+    "reviewer": "Codex direct-reading draft; NOT human/legal-expert verification",
+    "status": "PENDING_HUMAN_REVIEW",
+    "at": "2026-10-14T09:14:46.532Z"
+  },
+  {
+    "predictionId": "spotify-p1",
+    "referenceId": "draft-5",
+    "verdict": "CONTRADICTORY",
+    "rationale": "A twelve-month payment lookback determining the damages cap is incorrectly called a claim-filing deadline. Adjacent nonwaivable-liability exceptions are also omitted. This is an unsupported interpretation despite a literal quote.",
+    "predictionFingerprint": "3a6b7353dd514b8f000713c47a8abcd37c3f6a0f1b853f3f94f61b4f63492ebc",
+    "reviewer": "Codex direct-reading draft; NOT human/legal-expert verification",
+    "status": "PENDING_HUMAN_REVIEW",
+    "at": "2026-10-14T09:14:46.533Z"
+  },
+  {
+    "predictionId": "spotify-p3",
+    "referenceId": "draft-4",
+    "verdict": "SUPPORTED",
+    "rationale": "Conditional no-partial-period refund clause retains unless otherwise stated in quote and may not in explanation. Reason overstates lack of refund; source qualifications and anytime cancellation need human review.",
+    "predictionFingerprint": "6590206dc66593647e4356d6172a6b7e5f40f10c7a5ffd2ea92b25d6516dd10a",
+    "reviewer": "Codex direct-reading draft; NOT human/legal-expert verification",
+    "status": "PENDING_HUMAN_REVIEW",
+    "at": "2026-10-14T09:14:46.533Z"
+  },
+  {
+    "predictionId": "dropbox-p1",
+    "referenceId": "draft-7",
+    "verdict": "SUPPORTED",
+    "rationale": "Actual $20/100%-paid cap quoted with non-limitable legal liabilities and described with that exception. The sentence describing whom this protects is mistranslated; the cap and disadvantage rationale are retained, pending human review.",
+    "predictionFingerprint": "7d42655f66571a79cd5ed82b3585267a4807c8365fea009e032f07aa11c6bb1f",
+    "reviewer": "Codex direct-reading draft; NOT human/legal-expert verification",
+    "status": "PENDING_HUMAN_REVIEW",
+    "at": "2026-10-14T09:14:46.533Z"
+  },
+  {
+    "predictionId": "dropbox-p3",
+    "referenceId": "draft-6",
+    "verdict": "CONTRADICTORY",
+    "rationale": "The explanation limits both cancellation and refund rights to statutory obligations. Original immediately preceding text permits cancellation at any time; only refunds are conditional. This wrongly expands the restriction to cancellation.",
+    "predictionFingerprint": "d1c2968365c8c6599379e668e81d29c37ee30a9a38b8a5325f33f9bb2d53d170",
+    "reviewer": "Codex direct-reading draft; NOT human/legal-expert verification",
+    "status": "PENDING_HUMAN_REVIEW",
+    "at": "2026-10-14T09:14:46.533Z"
+  }
+]

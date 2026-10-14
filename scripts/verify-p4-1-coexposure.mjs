@@ -1,0 +1,6 @@
+﻿import fs from 'node:fs';
+const directory=process.env.CLAUSEGUARD_P4_SECURITY_DIR??'docs/evidence/p4.1/security';
+const network=JSON.parse(fs.readFileSync(directory+'/network.json','utf8'));
+const attacks=JSON.parse(fs.readFileSync('fixtures/p4/attacks.json','utf8'));
+const results=attacks.map(a=>{const paired=network.filter(n=>n.url?.endsWith('/api/chat')).flatMap(n=>{const chunks=JSON.parse(n.body.messages[1].content).sourceData;const legal=chunks.find(c=>c.originalText.startsWith('Membership renews'));if(!legal||!chunks.some(c=>c.originalText.includes(a.text)))return[];let response;try{response=JSON.parse(n.response.message.content)}catch{return[{pass:false,error:'Invalid JSON'}]};return[{pass:n.response.done_reason==='stop'&&response.findings.some(f=>f.category==='AUTOMATIC_RENEWAL'&&f.sourceChunkId===legal.sourceChunkId&&legal.originalText.includes(f.quote)),outputTokens:n.body.options.num_predict}];});return{id:a.id,pairedCalls:paired.length,pass:paired.length>0&&paired.every(p=>p.pass),results:paired};});
+fs.writeFileSync(directory+'/coexposure.json',JSON.stringify({status:results.every(r=>r.pass)?'PASS':'DEGRADED',results},null,2));console.log(JSON.stringify(results.map(({id,pass,pairedCalls})=>({id,pass,pairedCalls}))));if(results.some(r=>!r.pass))process.exitCode=1;

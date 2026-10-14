@@ -1,0 +1,92 @@
+[
+  {
+    "predictionId": "github-p19",
+    "referenceId": "draft-1",
+    "verdict": "SUPPORTED",
+    "rationale": "Same non-refundable unused-period disadvantage; explanation retains paid-period service. Downgrade mistranslated as download is a secondary wording concern requiring human review, not a change to the underlying unused-period refund reference.",
+    "predictionFingerprint": "f806417abf28d2061805b54fc14d68c0238ef5e01208e2df797f4eca7a4766d4",
+    "reviewer": "Codex direct-reading draft; NOT human/legal-expert verification",
+    "status": "PENDING_HUMAN_REVIEW"
+  },
+  {
+    "predictionId": "discord-p18",
+    "referenceId": "draft-3",
+    "verdict": "SUPPORTED",
+    "rationale": "Exact same cap and explanation explicitly preserves liability that cannot be limited by law.",
+    "predictionFingerprint": "7adb6e6c441f3bbb81a5c205e5e4fc3eecdae135c79882f7e01ca2209d9a4a8d",
+    "reviewer": "Codex direct-reading draft; NOT human/legal-expert verification",
+    "status": "PENDING_HUMAN_REVIEW"
+  },
+  {
+    "predictionId": "discord-p35",
+    "referenceId": "draft-2",
+    "verdict": "SUPPORTED",
+    "rationale": "Same consequential-loss exclusion; quote and explanation preserve jurisdiction/applicable-law qualifications.",
+    "predictionFingerprint": "1694663c6fcb619b67f1bc8cdef059ff6ed68de6ee1fb63add1b3341ab93d64c",
+    "reviewer": "Codex direct-reading draft; NOT human/legal-expert verification",
+    "status": "PENDING_HUMAN_REVIEW"
+  },
+  {
+    "predictionId": "reddit-p1",
+    "referenceId": "draft-8",
+    "verdict": "CONTRADICTORY",
+    "rationale": "Accuracy warranty disclaimer is not the referenced damages exclusion/cap. Explanation infers inability to hold Reddit accountable despite statutory protections in the same chunk.",
+    "predictionFingerprint": "d023346ea2c552d815a8cc0864bf6ed6246d5abf4dc8f0c0f9f4bc5a192e262c",
+    "reviewer": "Codex direct-reading draft; NOT human/legal-expert verification",
+    "status": "PENDING_HUMAN_REVIEW"
+  },
+  {
+    "predictionId": "reddit-p11",
+    "referenceId": "draft-8",
+    "verdict": "CONTRADICTORY",
+    "rationale": "Technical damage allocation is a liability issue rather than the referenced category of access/deletion/dispute rights. Wrong category for this reference.",
+    "predictionFingerprint": "da63bc02d70282bc74f46c803d2ec92795e052c7976a6baac6304c6033c0c280",
+    "reviewer": "Codex direct-reading draft; NOT human/legal-expert verification",
+    "status": "PENDING_HUMAN_REVIEW"
+  },
+  {
+    "predictionId": "reddit-p19",
+    "referenceId": "draft-8",
+    "verdict": "CONTRADICTORY",
+    "rationale": "Explanation asserts a definite cap that cannot be exceeded without retaining statutory-rights qualifications explicitly present in this source paragraph.",
+    "predictionFingerprint": "8f43b60884d9ca2193326250c53048db8483b20124d911517a2e27f9f9b41d1f",
+    "reviewer": "Codex direct-reading draft; NOT human/legal-expert verification",
+    "status": "PENDING_HUMAN_REVIEW"
+  },
+  {
+    "predictionId": "spotify-p10",
+    "referenceId": "draft-5",
+    "verdict": "CONTRADICTORY",
+    "rationale": "Explanation says no compensation can be claimed for service interruption or data loss, although the source sets a cap and preserves mandatory liabilities in adjacent paragraph 109. The blanket claim contradicts the qualified reference.",
+    "predictionFingerprint": "f4e3c5327d8318b546b45c24dba9dc25f09a79775c6fdbaeda4248de3b5a228a",
+    "reviewer": "Codex direct-reading draft; NOT human/legal-expert verification",
+    "status": "PENDING_HUMAN_REVIEW"
+  },
+  {
+    "predictionId": "spotify-p18",
+    "referenceId": "draft-4",
+    "verdict": "SUPPORTED",
+    "rationale": "Same conditional no-partial-period-refund disadvantage; quote retains exception wording and explanation correctly identifies the canceled billing period. Severity is separate.",
+    "predictionFingerprint": "184f41d0ec85d33bb5d2ea7ac6ae8c31e75b48ddbc925f5d989cef117d64629e",
+    "reviewer": "Codex direct-reading draft; NOT human/legal-expert verification",
+    "status": "PENDING_HUMAN_REVIEW"
+  },
+  {
+    "predictionId": "spotify-p38",
+    "referenceId": "draft-5",
+    "verdict": "UNREVIEWED",
+    "rationale": "Ordinary foreseeability restriction is a different claim from the independently annotated broad exclusions/monetary cap; exact same chunk is not sufficient semantic support. No TP granted pending direct human review.",
+    "predictionFingerprint": "d8c915cb2aa68b5ae19755dca8b989b2b64924e681b265e1061e8964588bb12e",
+    "reviewer": "Codex direct-reading draft; NOT human/legal-expert verification",
+    "status": "PENDING_HUMAN_REVIEW"
+  },
+  {
+    "predictionId": "dropbox-p5",
+    "referenceId": "draft-7",
+    "verdict": "CONTRADICTORY",
+    "rationale": "Interpretation states payment cannot exceed the cap, omitting explicit nonwaivable-law and EU exceptions in the same source paragraph. This universal limit conflicts with the qualified reference.",
+    "predictionFingerprint": "55cd94bacfff59009bebce8bb3e81267eae1270859e011cd3b1c31f3deb73ec4",
+    "reviewer": "Codex direct-reading draft; NOT human/legal-expert verification",
+    "status": "PENDING_HUMAN_REVIEW"
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "at": "2026-10-14T10:40:06.097Z",
+  "totalPassed": 1,
+  "totalFailed": 1,
+  "runs": [
+    {
+      "spec": {
+        "absolute": "C:/Users/Emre/Desktop/nurettin/Challenge3/cypress/demo.cy.mjs",
+        "fileExtension": ".mjs",
+        "fileName": "demo",
+        "name": "demo.cy.mjs",
+        "relative": "cypress\\demo.cy.mjs"
+      },
+      "video": "C:\\Users\\Emre\\Desktop\\nurettin\\Challenge3\\demo\\raw\\demo.cy.mjs.mp4",
+      "stats": {
+        "duration": 81711,
+        "endedAt": "2026-10-14T10:39:59.469Z",
+        "failures": 1,
+        "passes": 1,
+        "pending": 0,
+        "skipped": 0,
+        "startedAt": "2026-10-14T10:38:37.758Z",
+        "suites": 1,
+        "tests": 2
+      }
+    }
+  ]
+}

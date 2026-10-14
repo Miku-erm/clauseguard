@@ -1,0 +1,32 @@
+[
+  {
+    "sourceId": "github",
+    "documentHash": "88f85845caf52f3f0c5b2ca7862589cd78f35256e0115a281d7547854660b271",
+    "version": "Effective April 27, 2026",
+    "region": "GitHub standard individual-user terms; US/California provisions"
+  },
+  {
+    "sourceId": "discord",
+    "documentHash": "d8a787422698ac39949615715a78f06985db7346f4bd77e0c3abe4d344faeec5",
+    "version": "Effective September 29, 2025",
+    "region": "General terms with region-specific dispute provisions"
+  },
+  {
+    "sourceId": "reddit",
+    "documentHash": "a6d182b4aa6bac3bf3c629db787391a217f933d70a2c5664c9c6ed541295b6a9",
+    "version": "Effective July 1, 2026; revised May 26, 2026",
+    "region": "US and outside EEA/UK/Switzerland ONLY; EEA branch excluded"
+  },
+  {
+    "sourceId": "spotify",
+    "documentHash": "401d734db094bd386eeae685f497ccff9dfd663d78ce5c67a1f7335f2cc1f100",
+    "version": "Last updated August 26, 2025 (Son Güncelleme: 26 Ağustos 2025)",
+    "region": "tr-tr Turkish regional version"
+  },
+  {
+    "sourceId": "dropbox",
+    "documentHash": "26d95f6839e56300785f89845f1496335e4819c8b0e1392fd15bc9c857d01c23",
+    "version": "Effective January 7, 2025",
+    "region": "General consumer terms; regional exceptions retained, announced 2027 version not followed"
+  }
+]

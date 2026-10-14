@@ -1,0 +1,74 @@
+[
+  {
+    "predictionId": "github-p1",
+    "referenceId": "draft-1",
+    "verdict": "SUPPORTED",
+    "rationale": "Exact non-refundable unused-period clause; explanation retains paid-period service. Downgrade wording remains a translation concern.",
+    "predictionFingerprint": "dbabb787f0a344ce1dd3dc38a9acae434cbeeda3cbe9677fdbd09d239bd956c0",
+    "reviewer": "Codex direct-reading draft; NOT human/legal-expert verification",
+    "status": "PENDING_HUMAN_REVIEW"
+  },
+  {
+    "predictionId": "discord-p1",
+    "referenceId": "draft-2",
+    "verdict": "SUPPORTED",
+    "rationale": "Actual broad consequential-loss exclusion; quote and reason explicitly preserve maximum extent permitted by applicable law. English rationale is a language-quality limitation.",
+    "predictionFingerprint": "c03b2f4634fdfb2b931b5f73c2a1877cb861d0411919063f86556e8006fb640b",
+    "reviewer": "Codex direct-reading draft; NOT human/legal-expert verification",
+    "status": "PENDING_HUMAN_REVIEW"
+  },
+  {
+    "predictionId": "discord-p4",
+    "referenceId": "draft-2",
+    "verdict": "SUPPORTED",
+    "rationale": "Same exclusion and statutory-rights qualification; overlaps p1, so one-to-one matching counts only one TP and exposes the duplicate. Foreseeability phrasing deserves human review.",
+    "predictionFingerprint": "6fc6f55a67b1c4617bd9d7afecb1645a106b1859172020080cc880e136688190",
+    "reviewer": "Codex direct-reading draft; NOT human/legal-expert verification",
+    "status": "PENDING_HUMAN_REVIEW"
+  },
+  {
+    "predictionId": "discord-p3",
+    "referenceId": "draft-3",
+    "verdict": "SUPPORTED",
+    "rationale": "Quote explicitly excludes liability that cannot be limited by law and states the three-month/$100 cap. Explanation omits this qualification but does not expressly deny it; human review remains required.",
+    "predictionFingerprint": "56c56133f63139a3241d70aeb64d28ccff3eac7a317bdf5062945c49d5e2f94c",
+    "reviewer": "Codex direct-reading draft; NOT human/legal-expert verification",
+    "status": "PENDING_HUMAN_REVIEW"
+  },
+  {
+    "predictionId": "spotify-p2",
+    "referenceId": "draft-5",
+    "verdict": "CONTRADICTORY",
+    "rationale": "Unqualified broad exclusion/cap explanation omits the nearby nonwaivable-liability protection required by the reference rationale. Exact quote alone cannot establish semantic support.",
+    "predictionFingerprint": "3e5b29eaa5291bfb8db28e5f53e33b0674f09e0a8066349f05964c2763e35881",
+    "reviewer": "Codex direct-reading draft; NOT human/legal-expert verification",
+    "status": "PENDING_HUMAN_REVIEW"
+  },
+  {
+    "predictionId": "spotify-p4",
+    "referenceId": "draft-4",
+    "verdict": "SUPPORTED",
+    "rationale": "Partial-period refund restriction and exceptions are explicit in quote/reason. Wording about exit rights is a secondary interpretation/translation concern; reference remains a refund disadvantage only.",
+    "predictionFingerprint": "7af09e012ce4314410d9342df98005f01e07d322ff72c41b4b58e9415aedff11",
+    "reviewer": "Codex direct-reading draft; NOT human/legal-expert verification",
+    "status": "PENDING_HUMAN_REVIEW"
+  },
+  {
+    "predictionId": "dropbox-p1",
+    "referenceId": "draft-7",
+    "verdict": "SUPPORTED",
+    "rationale": "Cap quote and explanation preserve non-limitable-by-law exceptions, which also qualify the EU provision where prohibited by law. No unconditional all-liability cap assertion.",
+    "predictionFingerprint": "68cfff22b148a7e84b027f63dcf9e93825d81b9fd64ffe1a6dde2e62f9543151",
+    "reviewer": "Codex direct-reading draft; NOT human/legal-expert verification",
+    "status": "PENDING_HUMAN_REVIEW"
+  },
+  {
+    "predictionId": "dropbox-p2",
+    "referenceId": "draft-6",
+    "verdict": "SUPPORTED",
+    "rationale": "Refund only when legally required, with explicit EU 14-day protection in reason; narrowed qualifying disadvantage matches original reference.",
+    "predictionFingerprint": "ec3faad898a11a6f1af5a373a501b18c33b688d976947a35d758f34a978c9171",
+    "reviewer": "Codex direct-reading draft; NOT human/legal-expert verification",
+    "status": "PENDING_HUMAN_REVIEW"
+  }
+]

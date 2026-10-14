@@ -1,0 +1,61 @@
+{
+  "provisional": true,
+  "referenceSha256": "5bd3a2c09c9a6eb0145faf9ae7252792554e80f029409e59003cd8395bbc739e",
+  "versions": [
+    {
+      "version": "BASELINE_P4",
+      "scope": "Full extracted-text run",
+      "metrics": {
+        "tp": 4,
+        "fp": 6,
+        "fn": 4,
+        "precision": 0.4,
+        "recall": 0.5,
+        "f1": 0.4444444444444444
+      }
+    },
+    {
+      "version": "CANDIDATE_P4_1",
+      "scope": "Fresh selected-reference-batch pilot",
+      "metrics": {
+        "tp": 4,
+        "fp": 4,
+        "fn": 4,
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1": 0.5
+      }
+    },
+    {
+      "version": "FINAL_P4_1",
+      "scope": "BLOCKED: smaller semantic gate failed",
+      "metrics": null
+    }
+  ],
+  "candidateConfig": {
+    "model": "qwen3.5:9b-q4_K_M",
+    "context": 8192,
+    "temperature": 0,
+    "output": 1536,
+    "maxOutput": 3072,
+    "providerHash": "fe07d261f14ae30592f5487164bdd213abc9fe314c8dba1dc321c7c31adc2f45",
+    "schemaVersion": "risk-v1",
+    "evaluationVersion": "P4.1",
+    "schemaHash": "432bc563a2e3523ffe850e9140126b1917cff19ea8bf8415fd04b9ee5f43843a",
+    "batchingHash": "20fd5b33f6e69c08117e94fe1c8f1257f10c93c5f3d26458803d99e882b13c0e",
+    "verifierHash": "e633c4f52384e8e6622aa5ca3b852cd9b5af3075b73123e6b1e2dcb06e89ca08",
+    "scope": "predeclared-reference-batches",
+    "promptHash": "8ee3e83e00ecf4b3d9f8f0176ca9380a8300094e703b2b378bdf8bae64d5ace6",
+    "goldHash": "5bd3a2c09c9a6eb0145faf9ae7252792554e80f029409e59003cd8395bbc739e"
+  },
+  "finalStageDecision": {
+    "at": "2026-10-14T09:12:18.821Z",
+    "candidatePromptHash": "8ee3e83e00ecf4b3d9f8f0176ca9380a8300094e703b2b378bdf8bae64d5ace6",
+    "status": "BLOCKED",
+    "stageD": "NOT_STARTED",
+    "reason": "Three wider targeted semantic checks failed; Stage D requires the candidate to pass smaller checks. A fresh selected-batch diagnostic pilot and actual browser/security regressions are retained; no full-run final metrics or performance is fabricated.",
+    "semantic": "docs/evidence/p4.1/final-independent-semantics/summary.json",
+    "targeted": "docs/evidence/p4.1/final-independent-targeted/summary.json",
+    "safe": "docs/evidence/p4.1/final-independent-safe/summary.json"
+  }
+}

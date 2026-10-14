@@ -1,0 +1,6 @@
+# ClauseGuard demonstration site
+
+> Controlled local documents for a university assignment.
+
+## Policies
+- [Subscription Terms](/demo/risk.html): The controlled subscription document.

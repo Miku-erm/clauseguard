@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-14T10:54:47.217Z",
+  "status": "PASS",
+  "sha256": "f6a5e4a925c7cf60efe101d1ba5e05878ef6446e84b2fec8712b4e8db5c30108",
+  "method": "Direct visual inspection with local image-view tool of representative decoded final-MP4 frames",
+  "frames": [
+    "demo/frames/0-report.png",
+    "demo/frames/1-verified-quote-visible.png",
+    "demo/frames/4-uncertainty-visible.png",
+    "demo/frames/6-scan-end.png"
+  ],
+  "observations": [
+    "Real policy is opened next to actual extension UI",
+    "Actual score 27 and report are visible",
+    "Original source quotation is readable",
+    "Incomplete coverage shows Turkish withholding message without numeric score",
+    "Turkish disclaimer is visible; no substituted AI reports or fabricated source action"
+  ]
+}
