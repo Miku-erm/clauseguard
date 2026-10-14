@@ -18,3 +18,7 @@ demo/screenshots/
 demo/frames/
 docs/evidence/final-*.log
 docs/evidence/*.utf16.txt
+# Older local evidence is not part of the reviewed public delivery.
+# Already tracked baseline/security summaries remain versioned.
+docs/evidence/*
+!docs/evidence/final/
